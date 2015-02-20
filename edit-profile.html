@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Viasun.travel — Личный кабинет</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<div class="navbar navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <div class="logo text-hide">Viasun.travel</div>
+                <p class="small">онлайн-турагентство</p>
+            </a>
+        </div>
+        <!--navbar-header-->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="about.html" class="no-underline"><span class="underlined">Об агентстве</span></a>
+                </li>
+                <li>
+                    <a href="reviews.html" class="no-underline"><span class="underlined">Отзывы</span></a>
+                </li>
+                <li>
+                    <a href="questions.html" class="no-underline"><span class="underlined">Вопрос-ответ</span></a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="navbar-phone">
+                    <div>8 800 555 7853</div>
+                    <p class="small pull-right">10:00&mdash;21:00</p>
+                </li>
+                <li class="navbar-login">
+                    <a href="orderlist.html" class="no-underline current">
+                        <span class="glyphicon glyphicon-user"></span> <span class="underlined">Дмитрий Гражданкин</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--navbar-collapse-->
+    </div>
+</div>
+<!--navbar-->
+
+
+<div id="page_edit-profile" class="page-white">
+<div class="container">
+
+<!--block header-->
+<header class="split">
+    <!--block title-->
+    <div class="flex-justify">
+        <h1>Личный кабинет</h1>
+                <span class="nav">
+                    <a href="orderlist.html">Список заказов</a>
+                    <a href="support.html">Служба поддержки</a>
+                    <span class="current">Настройка профиля</span>
+                </span>
+    </div>
+    <h2>Настройка профиля</h2>
+
+    <div class="alert alert-success">Изменения сохранены</div>
+    <!--endblock-->
+</header>
+<div class="ruler"></div>
+<!--endblock-->
+
+<!--block content-->
+<form role="form">
+<div class="split">
+    <div class="form-flex profile-contacts">
+        <div class="line small">
+            <div class="section">
+                <div class="form-group phone">Телефон</div>
+                <div class="form-group email">Email</div>
+                <div class="form-group password"></div>
+            </div>
+        </div>
+        <div class="line">
+            <div class="section about">
+                <div class="form-group phone">
+                    <label class="sr-only" for="reg-phone">Телефон</label>
+                    <input class="form-control" id="reg-phone" type="text" placeholder="+7">
+                </div>
+                <div class="form-group email">
+                    <label class="sr-only" for="edit-email">Email</label>
+                    <input class="form-control" id="edit-email" type="text" placeholder="ilove@viasun.ru">
+                </div>
+                <div class="form-group password"><a class="small" href="edit-pass.html">Сменить пароль</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ruler"></div>
+<div class="split">
+    <div class="flex-justify">
+        <h3>Данные профиля</h3>
+                <span class="nav small">
+                    <span>По паспорту Российской Федерации</span>
+                    <button type="button" class="btn btn-dashedlink">Зачем нужны эти данные?</button>
+                </span>
+    </div>
+    <div class="form-flex customer">
+        <div class="line small">
+            <div class="section left">
+                <div class="form-group name">Имя</div>
+                <div class="form-group otch">Отчество</div>
+                <div class="form-group fam">Фамилия</div>
+            </div>
+            <div class="section right">
+                <div class="form-group ser">Серия</div>
+                <div class="form-group num">Номер</div>
+                <div class="form-group give">Дата выдачи</div>
+            </div>
+        </div>
+        <div class="line">
+            <div class="section left">
+                <div class="form-group name">
+                    <label class="sr-only" for="profile-name">Имя</label>
+                    <input class="form-control" id="profile-name" type="text" placeholder="Иван">
+                </div>
+                <div class="form-group otch">
+                    <label class="sr-only" for="profile-otch">Отчество</label>
+                    <input class="form-control" id="profile-otch" type="text" placeholder="Иванович">
+                </div>
+                <div class="form-group fam">
+                    <label class="sr-only" for="profile-fam">Фамилия</label>
+                    <input class="form-control" id="profile-fam" type="text" placeholder="Иванов">
+                </div>
+            </div>
+            <div class="section right">
+                <div class="form-group ser">
+                    <label class="sr-only" for="profile-ser">Серия</label>
+                    <input class="form-control" id="profile-ser" type="text">
+                </div>
+                <div class="form-group num">
+                    <label class="sr-only" for="profile-num">Номер</label>
+                    <input class="form-control" id="profile-num" type="text">
+                </div>
+                <div class="form-group give">
+                    <label class="sr-only" for="profile-give">Дата выдвчи</label>
+                    <input class="form-control" id="profile-give" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="line small">
+            <div class="section left">
+                <div class="form-group given">Кем выдан</div>
+            </div>
+            <div class="section right">
+                <div class="form-group adress">Адрес проживания</div>
+            </div>
+        </div>
+        <div class="line">
+            <div class="section left">
+                <div class="form-group given">
+                    <label class="sr-only" for="profile-given">Кем выдан</label>
+                    <input class="form-control" id="profile-given" type="text">
+                </div>
+            </div>
+            <div class="section right">
+                <div class="form-group adress">
+                    <label class="sr-only" for="profile-adress">Адрес проживания</label>
+                    <input class="form-control" id="profile-adress" type="text">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ruler"></div>
+<div class="split">
+    <div class="flex-justify">
+        <h3>Заграничный паспорт</h3>
+        <span class="small">По данным заграничного паспорта</span>
+    </div>
+    <div class="form-flex adults">
+        <div class="line small">
+            <div class="section about">
+                <div class="form-group sex">Пол</div>
+                <div class="form-group name">Имя</div>
+                <div class="form-group fam">Фамилия</div>
+                <div class="form-group birth">Дата рождения</div>
+            </div>
+            <div class="section passport">
+                <div class="form-group ser">Серия</div>
+                <div class="form-group num">Номер</div>
+                <div class="form-group give">Дата выдачи</div>
+                <div class="form-group until">Истекает</div>
+            </div>
+            <div class="section country">
+                <div class="form-group nationality">Гражд-во</div>
+            </div>
+        </div>
+        <div class="line">
+            <div class="section about">
+                <div class="form-group sex">
+                    <div class="radioinput js-input-sex">
+                        <input type="radio" id="male-0" checked>
+                        <label for="male-0"><span class="icon-man"></span></label>
+                        <input type="radio" id="female-0">
+                        <label for="female-0"><span class="icon-woman"></span></label>
+                    </div>
+                </div>
+                <div class="form-group name">
+                    <label class="sr-only" for="profile-zagran-name-0">Имя</label>
+                    <input class="form-control" id="profile-zagran-name-0" type="text" placeholder="IVAN">
+                </div>
+                <div class="form-group fam">
+                    <label class="sr-only" for="profile-zagran-fam-0">Фамилия</label>
+                    <input class="form-control" id="profile-zagran-fam-0" type="text" placeholder="IVANOV">
+                </div>
+                <div class="form-group birth">
+                    <label class="sr-only" for="profile-zagran-birth-0">Дата рождения</label>
+                    <input class="form-control" id="profile-zagran-birth-0" type="text">
+                </div>
+            </div>
+            <div class="section passport">
+                <div class="form-group ser">
+                    <label class="sr-only" for="profile-zagran-ser-0">Серия</label>
+                    <input class="form-control" id="profile-zagran-ser-0" type="text">
+                </div>
+                <div class="form-group num">
+                    <label class="sr-only" for="profile-zagran-num-0">Номер</label>
+                    <input id="profile-zagran-num-0" type="text">
+                </div>
+                <div class="form-group give">
+                    <label class="sr-only" for="profile-zagran-give-0">Выдан</label>
+                    <input class="form-control" id="profile-zagran-give-0" type="text">
+                </div>
+                <div class="form-group until">
+                    <label class="sr-only" for="profile-zagran-until-0">Истекает</label>
+                    <input class="form-control" id="profile-zagran-until-0" type="text">
+                </div>
+            </div>
+            <div class="section country">
+                <div class="form-group nationality">
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <p class="small">Внесите информацию о своих постоянных попутчиках. Например: о жене, если она будет путешествовать вместе с вами. Это ускорит
+                оформление необходимых документов.</p>
+        </div>
+        <div class="col-md-6">
+            <a class="link-dashed js-add-passenger" href="#" data-target=".js-passenger">+ Добавить попутчика</a>
+        </div>
+    </div>
+</div>
+<div class="ruler"></div>
+<div class="split">
+    <h3>Подписки</h3>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="checkbox">
+                <p>
+                    <input type="checkbox" id="subscription-email" class="hidden">
+                    <label for="subscription-email">Подписаться на рассылку</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="subscription-sms" class="hidden">
+                    <label for="subscription-sms">Оповещать с помощью SMS</label>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-6">
+            <button type="button" class="btn btn-big btn-yellow">Сохранить</button>
+        </div>
+    </div>
+</div>
+</form>
+<!--endblock-->
+
+</div>
+</div>
+<!--page-->
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="footer-copyright">&copy; 2014 — Viasun.travel</div>
+                <div class="logo-cs text-hide">«Конструктивные Решения»</div>
+            </div>
+            <div class="col-md-6">
+                <ul class="footer-nav">
+                    <li><a href="#">Об агентстве</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Вопрос-ответ</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="footer-address">
+                    <p>634000, Россия, г. Новосибирск, ул. Романова, 39, оф. 305</p>
+
+                    <p>ООО «Виасан», ИНН 5406717327 ОГРН 1125476109758</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer-phone pull-right">8 800 333 4576</div>
+                <div class="pull-right">Бесплатный звонок по России</div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Viasun.travel — Отзывы</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<div class="navbar navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <div class="logo text-hide">Viasun.travel</div>
+                <p class="small">онлайн-турагентство</p>
+            </a>
+        </div>
+        <!--navbar-header-->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="about.html" class="no-underline"><span class="underlined">Об агентстве</span></a>
+                </li>
+                <li>
+                    <span class="current">Отзывы</span>
+                </li>
+                <li>
+                    <a href="questions.html" class="no-underline"><span class="underlined">Вопрос-ответ</span></a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="navbar-phone">
+                    <div>8 800 555 7853</div>
+                    <p class="small pull-right">10:00&mdash;21:00</p>
+                </li>
+                <li class="navbar-login">
+                    <a href="auth.html" class="no-underline">
+                        <span class="glyphicon glyphicon-user"></span> <span class="underlined">Войти</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--navbar-collapse-->
+    </div>
+</div>
+<!--navbar-->
+
+<div id="page_reviews" class="">
+    <div class="container">
+
+        <!--block header-->
+        <header class="split">
+            <!--block title-->
+            <div class="flex-justify">
+                <h1>Отзывы</h1>
+                <span class="nav">
+                    <a href="about.html">Об агентстве</a>
+                    <span class="current">Отзывы</span>
+                    <a href="contacts.html">Контакты</a>
+                </span>
+            </div>
+            <!--endblock-->
+        </header>
+        <div class="ruler"></div>
+        <!--endblock-->
+
+        <!--block content-->
+        <div class="split">
+            <div class="review">
+                <div class="row">
+                    <div class="col-md-3 col-md-offset-3 col-lg-offset-2">
+                        <button type="button" class="btn btn-search btn-yellow js-toggle-review-form" data-target=".js-create-review">Добавить отзыв</button>
+                    </div>
+                </div>
+            </div>
+
+            <form class="review create js-create-review hidden">
+                <div class="row">
+                    <div class="col-md-3 col-lg-2">
+                        <div class="round-photo">
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-9">
+                        <div class="bubble">
+                            <div class="form-flex new-review">
+                                <div class="line">
+                                    <div class="section">
+                                        <div class="form-group">
+                                            <label class="control-label small" for="profile-name">Имя</label>
+                                            <input class="form-control" id="profile-name" type="text" placeholder="Иван">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label small" for="vacation-country">Страна отдыха</label>
+                                            <input class="form-control" id="vacation-country" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="section">
+                                        <div class="form-group">
+                                            <label class="control-label small" for="review-text">Текст отзыва</label>
+                                            <textarea class="form-control" id="review-text" rows=8></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="section">
+                                        <div class="form-group">
+                                            <label class="control-label small" for="social-link">Страна отдыха</label>
+                                            <input class="form-control" id="social-link" type="text" placeholder="http://vk.com/id2947239">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="section">
+                                        <div class="form-group small">
+                                            <label class="control-label">Ваше фото:</label>
+                                            <input type="file" value="" class="btn btn-link" name="application_viasun_review_bundle_review[photo][file]">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="section">
+                                        <div class="form-group">
+                                            <a href="" class="btn btn-medium btn-yellow">Отправить</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="review create hidden">
+                <div class="row">
+                    <div class="col-md-3 col-lg-2">
+                        <div class="round-photo">
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-9">
+                        <div class="bubble">
+                            <p class="success">Спасибо! Ваш отзыв был успешно отправлен. После проверки он появится на сайте.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="review">
+                <div class="row">
+                    <div class="col-md-3 col-lg-2">
+                        <div class="round-photo">
+                            <img src="ct/face-01.jpg">
+                        </div>
+                        <p class="text-center name">Ольга Николаевна</p>
+
+                        <p class="text-center small"><a href="#" class="no-underline"><span class="icon-facebook"> </span><span
+                                class="underlined">evgeny_23</span></a></p>
+                    </div>
+                    <div class="col-md-8 col-lg-9">
+                        <div class="bubble">
+                            <div class="flex-justify">
+                                <span class="small">Страна отдыха: Египет</span>
+                                <span class="small">20 мая</span>
+                            </div>
+                            <p>Спасибо создателям и сотрудникам Viasun.travel за отличный сервис! Удобный поиск, крой по мерке, быстрая доставка из другой
+                                страны, и вот я получил свои джинсы. Примерил, подошли как родные, чего никогда не было в магазине. Удобны, ничего не жмёт,
+                                ничего не висит, длина ровно такая, какая необходима. <span class="highlight">Отдых удался на славу! Идеально!</span></p>
+
+                            <p>Теперь я знаю место, где посоветуют отличные отели, которые мне всегда подойдут. Обязательно закажу ещё и посоветую друзьям.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review answer">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-4 col-lg-9 col-lg-offset-3">
+                        <div class="bubble">
+                            <p>Да, действительно. Исправим в ближайшее время. Спасибо вам!</p>
+
+                            <p class="small subscript">Viasun.travel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review">
+                <div class="row">
+                    <div class="col-md-3 col-lg-2">
+                        <div class="round-photo">
+                            <img src="ct/face-02.jpg">
+                        </div>
+                        <p class="text-center name">Евгений</p>
+
+                        <p class="text-center small"><a href="#" class="no-underline"><span class="icon-vk"> </span><span
+                                class="underlined">evgeny_23</span></a></p>
+                    </div>
+                    <div class="col-md-8 col-lg-9">
+                        <div class="bubble">
+                            <div class="flex-justify">
+                                <span class="small">Страна отдыха: Египет</span>
+                                <span class="small">20 мая</span>
+                            </div>
+                            <p>Спасибо создателям и сотрудникам Viasun.travel за отличный сервис! Удобный поиск, крой по мерке, быстрая доставка из другой
+                                страны, и вот я получил свои джинсы. Примерил, подошли как родные, чего никогда не было в магазине. Удобны, ничего не жмёт,
+                                ничего не висит, длина ровно такая, какая необходима. <span class="highlight">Отдых удался на славу! Идеально!</span></p>
+
+                            <p>Теперь я знаю место, где посоветуют отличные отели, которые мне всегда подойдут. Обязательно закажу ещё и посоветую друзьям.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review answer">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-4 col-lg-9 col-lg-offset-3">
+                        <div class="bubble">
+                            <p>Да, действительно. Исправим в ближайшее время. Спасибо вам!</p>
+
+                            <p class="small subscript">Viasun.travel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review">
+                <div class="row">
+                    <div class="col-md-3 col-lg-2">
+                        <div class="round-photo">
+                        </div>
+                        <p class="text-center name">Евгений</p>
+
+                        <p class="text-center small"><a href="#" class="no-underline"><span class="icon-twitter"> </span><span
+                                class="underlined">evgeny_23</span></a></p>
+                    </div>
+                    <div class="col-md-8 col-lg-9">
+                        <div class="bubble">
+                            <div class="flex-justify">
+                                <span class="small">Страна отдыха: Египет</span>
+                                <span class="small">20 мая</span>
+                            </div>
+                            <p>Спасибо создателям и сотрудникам Viasun.travel за отличный сервис! Удобный поиск, крой по мерке, быстрая доставка из другой
+                                страны, и вот я получил свои джинсы. Примерил, подошли как родные, чего никогда не было в магазине. Удобны, ничего не жмёт,
+                                ничего не висит, длина ровно такая, какая необходима. <span class="highlight">Отдых удался на славу! Идеально!</span></p>
+
+                            <p>Теперь я знаю место, где посоветуют отличные отели, которые мне всегда подойдут. Обязательно закажу ещё и посоветую друзьям.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review">
+                <div class="row">
+                    <div class="col-md-3 col-lg-2">
+                        <div class="round-photo">
+                            <img src="ct/face-01.jpg">
+                        </div>
+                        <p class="text-center name">Евгений</p>
+
+                        <p class="text-center small"><a href="#" class="no-underline"><span class="icon-odnoklassniki"> </span><span class="underlined">evgeny_23</span></a>
+                        </p>
+                    </div>
+                    <div class="col-md-8 col-lg-9">
+                        <div class="bubble">
+                            <div class="flex-justify">
+                                <span class="small">Страна отдыха: Египет</span>
+                                <span class="small">20 мая</span>
+                            </div>
+                            <p>Спасибо создателям и сотрудникам Viasun.travel за отличный сервис! Удобный поиск, крой по мерке, быстрая доставка из другой
+                                страны, и вот я получил свои джинсы. Примерил, подошли как родные, чего никогда не было в магазине. Удобны, ничего не жмёт,
+                                ничего не висит, длина ровно такая, какая необходима. <span class="highlight">Отдых удался на славу! Идеально!</span></p>
+
+                            <p>Теперь я знаю место, где посоветуют отличные отели, которые мне всегда подойдут. Обязательно закажу ещё и посоветую друзьям.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review answer">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-4 col-lg-9 col-lg-offset-3">
+                        <div class="bubble">
+                            <p>Да, действительно. Исправим в ближайшее время. Спасибо вам!</p>
+
+                            <p class="small subscript">Viasun.travel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <button type="button" class="btn btn-big btn-yellow js-loadmore">Загрузить ещё отзывы</button>
+                </div>
+            </div>
+        </div>
+        <!--endblock-->
+    </div>
+</div>
+<!--page-->
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="footer-copyright">&copy; 2014 — Viasun.travel</div>
+                <div class="logo-cs text-hide">«Конструктивные Решения»</div>
+            </div>
+            <div class="col-md-6">
+                <ul class="footer-nav">
+                    <li><a href="#">Об агентстве</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Вопрос-ответ</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="footer-address">
+                    <p>634000, Россия, г. Новосибирск, ул. Романова, 39, оф. 305</p>
+
+                    <p>ООО «Виасан», ИНН 5406717327 ОГРН 1125476109758</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer-phone pull-right">8 800 333 4576</div>
+                <div class="pull-right">Бесплатный звонок по России</div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer-->
+
+
+<div class="goback">
+    <a href="#" class="collapse js-collapse"><span></span></a>
+    <a href="#" class="wrap wrap-default"><span>Вернуться к&nbsp;бронированию</span></a>
+    <a href="" class="wrap wrap-vertical"><span>Ваш тур</span></a>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-multiselect.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/moment.ru.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/bootstrap-slider.js"></script>
+<script src="js/bootstrap-datetimepicker.js"></script>
+<script src="http://fotorama.s3.amazonaws.com/4.5.2/fotorama.js"></script>
+<script src="js/jquery.inputmask.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/search-form.js"></script>
+<script src="js/search-results.js"></script>
+<script src="js/popovers.js"></script>
+<script>
+    $(function () {
+        $('.js-toggle-review-form').click(function(e) {
+            e.preventDefault();
+            var target = $(this).data('target');
+            $(target).toggleClass('hidden');
+            $(this).toggleClass('active');
+        });
+
+        $('.js-loadmore').click(function(){
+            $(this).addClass('btn-progress');
+            $(this).attr('disabled', 'disabled');
+        });
+    });
+</script>
+</body>
+</html>

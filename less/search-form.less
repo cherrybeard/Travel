@@ -1,0 +1,1148 @@
+.dropdown-menu {
+    background: darken(white, 2%);
+    color: lighten(black, 20%);
+    margin-top: -1px;
+    border: 0;
+    border-radius: 0 0 4px 4px;
+    padding: 0;
+
+    .arrow {
+        border: 0.8em solid transparent;
+        border-bottom-color: darken(white, 2%);
+        height: 0;
+        left: 50%;
+        margin-left: -0.8em;
+        position: absolute;
+        top: -1.5em;
+        width: 0;
+    }
+
+    .dropdown-title {
+        text-align: center;
+        padding: 0.5em 0.8em;
+    }
+
+    .dropdown-select {
+        background-color: white;
+        padding: 0.5em 0.8em;
+
+        &.dropdown-matrix {
+
+            .item {
+                cursor: pointer;
+                display: inline-block;
+                line-height: 2.1;
+                text-align: center;
+                width: 2em;
+
+                &.hover {
+                    background-color: lighten(@orange, 30%);
+                }
+
+                &.selected {
+                    background-color: @brightblue;
+                    color: white;
+                }
+
+                &.active, &.current {
+                    background-color: @brightblue;
+                    color: white;
+                    text-shadow: none;
+                }
+
+                &:hover {
+                    background-color: lighten(@orange, 30%);
+                    color:inherit;
+                }
+
+            }
+        }
+
+        &.dropdown-list {
+            padding: 0.5em 0;
+
+            .line {
+
+                label {
+                    color: lighten(black, 60%);
+                    width: 100%;
+                    line-height: 1.2;
+                    margin-bottom: 0;
+                    padding: 0.5em 1.4em 0.5em 0.8em;
+
+                    &:hover {
+                        background-color: lighten(@orange, 30%);
+
+                        input[type="checkbox"] {
+
+                            & + span {
+                                color: lighten(black, 40%);
+                                transition: color 0s;
+
+                                &:before {
+                                    background-position: 2px -30px;
+                                }
+                            }
+
+                            &:checked + span {
+                                &:before {
+                                    background-position: 2px -45px;
+                                }
+                            }
+                        }
+                    }
+
+                    &:before {
+                        vertical-align: -10%;
+                        width: 1.4em;
+                    }
+                }
+
+                .icon-star {
+                    color: lighten(black, 70%);
+                    letter-spacing: -2px;
+                    vertical-align: -10%;
+                    position: relative;
+                    left: -0.2em;
+                }
+
+                input[type="checkbox"]:checked + span {
+                    color: lighten(black, 20%);
+
+                    .icon-star {
+                        color: @orange;
+                    }
+                }
+            }
+        }
+
+        &.dropdown-selects {
+            border-bottom: solid 1px darken(white, 2%);
+            padding-bottom: 1.2em;
+
+            label, p {
+                color: lighten(black, 40%);
+                font-size: 90%;
+                margin-bottom: 0.4em;
+            }
+
+            .line {
+                justify-content: flex-start;
+
+                .form-group {
+                    padding-right: 0;
+                }
+
+                .children-age {
+                    margin-right: 5%;
+                    transition: width 0.2s, opacity 0.2s;
+                    width: 30%;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    &.off {
+                        opacity: 0;
+                        width: 0;
+                    }
+                }
+
+                select {
+                    border-radius: 0;
+                    padding: 0 0 0 6px;
+                }
+
+                .adults, .children {
+                    width: 47%;
+                }
+
+                .adults {
+                    margin-right: 6%;
+                }
+            }
+
+            select {
+                font-size: 120%;
+                font-weight: bold;
+            }
+
+            &.children-ages {
+                height: 5.5em;
+                opacity: 1;
+                transition: height 0.3s, padding 0.1s, opacity 0.3s;
+
+                &.off {
+                    border: none;
+                    height: 0;
+                    opacity: 0;
+                    padding-bottom: 0;
+                    padding-top: 0;
+                }
+            }
+        }
+
+    }
+
+    .form-group {
+        position: relative;
+    }
+
+    &.dropdown-simpleselect {
+        min-width: 0px;
+        width: 100%;
+
+        .item {
+            cursor: pointer;
+            padding: 0.1em 1.6em 0.1em 0.6em;
+
+            &.active {
+                background-color: @brightblue;
+                color: white;
+            }
+
+            &:hover, &.hover {
+                background-color: lighten(@orange, 30%);
+                color: inherit;
+            }
+        }
+
+    }
+}
+
+.form-search {
+    margin: 0;
+    width: 100%;
+
+    .city {
+
+        button {
+            display: inline;
+        }
+    }
+
+    .form-control {
+        font-size: inherit;
+    }
+
+    .flex-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .inputs {
+        width: 80%;
+        padding-top: 0.3em;
+    }
+
+    .extend {
+        border-radius: 4px;
+        padding: 0.4em;
+
+        &.selected {
+            background-color: darken(@brightblue, 20%);
+        }
+    }
+
+    .form-group {
+        padding-left: 0;
+        padding-right: 1.4rem;
+
+        &.to {
+            width: 38%;
+        }
+        &.when {
+            width: 15rem;
+        }
+        &.nights {
+            width: 10rem;
+        }
+        &.people {
+            width: 22rem;
+        }
+
+        &>label {
+            color: @lightblue;
+            font-size: 80%;
+        }
+    }
+
+    .line {
+
+        &.small {
+            margin-bottom: 0.2em;
+
+            .form-group {
+                color: @lightblue;
+            }
+        }
+
+        &.medium {
+            position: relative;
+        }
+    }
+
+    .input-group {
+        width: 100%;
+    }
+
+    .search-button {
+        padding-top: 0.2em;
+        width: 20%;
+    }
+
+    .btn.btn-dashedlink.onblue {
+        border-bottom-color: fade(@lightblue, 40%);
+        color: @lightblue;
+        font-weight: normal;
+
+        &:hover {
+            border-bottom-color: @lightblue;
+            color: lighten(@lightblue, 15%);
+        }
+    }
+
+    .select-white {
+        background: darken(white, 5%);
+        border-radius: 2px;
+        box-shadow: none;
+        border: none;
+        color: lighten(black, 20%);
+        cursor: pointer;
+        font-weight: bold;
+        padding: 0.4em 1.6em 0.4em 0.6em;
+        position: relative;
+        text-align: left;
+
+        &:hover {
+            background-color: white;
+            box-shadow: 0 1px 4px fade(black, 20%);
+            color: black;
+        }
+
+        &:active {
+            box-shadow: 0 1px 6px fade(black, 30%) inset;
+        }
+
+        &:before {
+            border-bottom: transparent 0.4em solid;
+            border-left: transparent 0.3em solid;
+            border-right: transparent 0.3em solid;
+            border-top: lighten(black, 40%) 0.4em solid;
+            border-radius: 0;
+            content: "";
+            height: 0;
+            margin-top: -0.1em;
+            padding: 0;
+            position: absolute;
+            right: 0.6em;
+            top: 50%;
+            width: 0;
+        }
+    }
+
+    .select-white-small {
+        background: transparent;
+        border: none;
+        color: lighten(black, 40%);
+        display: block;
+        font-size: 80%;
+        position: absolute;
+        right: 1.2em;
+        top: 0.4em;
+        width: auto;
+        z-index: 1000;
+    }
+
+    .people {
+
+        .dropdown-toggle {
+            .select-white;
+        }
+
+        .dropdown-menu {
+            width: 100%;
+
+            .dropdown-toggle {
+                background: white;
+                border: 1px solid darken(white, 10%);
+
+                &:hover {
+                    border: 1px solid darken(white, 20%);
+                }
+            }
+        }
+
+        .input-group-addon {
+            .select-white-small;
+        }
+    }
+
+
+    .extend {
+        border-radius: 4px;
+        font-size: 75%;
+        margin-top: 1em;
+
+        &:active {
+            background-color: darken(@brightblue, 15%);
+        }
+    }
+
+    h4 {
+        margin-bottom: 0;
+    }
+
+    .search-go-wrap {
+        float: right;
+        width: 180px;
+    }
+
+    .close-wrap {
+
+        .close {
+            font-size: 200%;
+            text-shadow: none;
+        }
+    }
+
+    .line {
+        padding-left: 0;
+
+        .section {
+            padding-left: 0;
+            border: none;
+            padding-bottom: 0.7em;
+            padding-top: 0;
+        }
+
+        &.small {
+
+            .section {
+                padding-top: 1em;
+            }
+        }
+    }
+
+    .nights {
+
+        .btn-group {
+            width: 100%;
+        }
+
+        .dropdown-toggle {
+            background: darken(white, 5%);
+            border: 0;
+            border-radius: 2px;
+            color: lighten(black, 20%);
+            font-weight: bold;
+            height: 2.1em;
+            line-height: inherit;
+            padding: 0.4em 1.6em 0.4em 0.6em;
+            text-align: left;
+            width: 100%;
+
+            &:hover {
+                background-color: white;
+                box-shadow: 0 1px 4px fade(black, 20%);
+                color: black;
+            }
+
+            &:active {
+                box-shadow: 0 1px 6px fade(black, 30%) inset;
+            }
+
+            &:before {
+                border-bottom: transparent 0.4em solid;
+                border-left: transparent 0.3em solid;
+                border-right: transparent 0.3em solid;
+                border-top: lighten(black, 40%) 0.4em solid;
+                border-radius: 0;
+                content: "";
+                height: 0;
+                margin-top: -0.1em;
+                padding: 0;
+                position: absolute;
+                right: 0.6em;
+                top: 50%;
+                width: 0;
+            }
+
+            input {
+                background: transparent;
+                border: none;
+                display: inline;
+                max-width: 2em;
+                padding: 0;
+            }
+
+            .nights-to {
+
+                &:before {
+                    content: " – ";
+                }
+            }
+        }
+
+        .dropdown-menu {
+            border-top: 1px darken(white, 15%) solid;
+        }
+    }
+
+    .hotel-class, .hotel-food {
+
+        &.open .onblue {
+            color: lighten(@lightblue, 15%);
+        }
+
+        .dropdown-menu {
+            margin-top: 0.3em;
+
+            .arrow {
+                border-bottom-color: white;
+            }
+        }
+    }
+
+    .hotel-class {
+        .dropdown-menu {
+        }
+    }
+
+    .hotel-food {
+        .dropdown-menu {
+            margin-left: 7em;
+        }
+    }
+
+    .hotel-beach {
+        .dropdown-menu {
+            margin-left: 24em;
+        }
+    }
+
+    .to {
+        position: relative;
+
+        .search-resort {
+            font-size: 80%;
+            height: 0;
+            left: 0;
+            padding-right: 2em;
+            position: absolute;
+            bottom: 0;
+            right: 1.4rem;
+
+            .btn {
+                float: right;
+                top: -2.1em;
+                position: relative;
+
+                &:hover {
+                    border-bottom-color: fade(spin(darken(@orange, 5%), -2), 30%);
+                    color: spin(darken(@orange, 5%), -2);
+                }
+            }
+
+            .dropdown-menu {
+                font-size: 1.4rem;
+                padding-left: 4px;
+                padding-right: 4px;
+                width: 100%;
+
+                li {
+                    margin-bottom: 0;
+
+                    &.active {
+
+                        a {
+                            background-color: transparent;
+                            color: black;
+
+                            &:hover {
+                                background-color: lighten(@orange, 30%);
+                            }
+                        }
+                    }
+
+                    a {
+                        border-bottom: none;
+                        padding-left: 1.6em;
+
+                        &:hover {
+                            background-color: lighten(@orange, 30%);
+                            color: lighten(black, 20%);
+                        }
+                    }
+
+                    label {
+                        padding: 0.5em;
+
+
+                        input[type="checkbox"] {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .search-date-wrap {
+        background: darken(white, 5%);
+        border-radius: 2px;
+        box-shadow: none;
+        border: none;
+        color: lighten(black, 20%);
+        padding: 0;
+        position: relative;
+
+
+        &:hover {
+            background-color: white;
+            box-shadow: 0 1px 4px fade(black, 20%);
+            color: black;
+        }
+
+        .input-group-addon {
+            background-color: transparent;
+            border: none;
+            position: absolute;
+
+            &.period {
+                font-size: 80%;
+                right: 4em;
+                line-height: 1.4 * 1.6rem;
+            }
+
+            &.caret {
+                cursor: pointer;
+                display: block;
+                height: 2.4em;
+                margin: 0;
+                width: 100%;
+                z-index: 1000;
+
+                &:before {
+                    border-bottom: transparent 0.4em solid;
+                    border-left: transparent 0.3em solid;
+                    border-right: transparent 0.3em solid;
+                    border-top: lighten(black, 40%) 0.4em solid;
+                    border-radius: 0;
+                    content: "";
+                    height: 0;
+                    margin-top: -0.1em;
+                    padding: 0;
+                    position: absolute;
+                    right: 0.6em;
+                    top: 50%;
+                    width: 0;
+                }
+
+                &:active {
+                    box-shadow: 0 1px 6px fade(black, 30%) inset;
+                }
+            }
+        }
+
+        input {
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            cursor: pointer;
+            color: inherit;
+            font-size: 1.6rem;
+            font-weight: bold;
+            height: 33px;
+            line-height: inherit;
+            padding: 6px 9px 5px;
+            text-align: left;
+            width: 100%;
+        }
+    }
+
+    .select2-container.country-format {
+        border: none;
+        font-size: inherit;
+
+        .select2-default {
+            color: lighten(black, 10%) !important;
+        }
+
+        .select2-choice {
+            background: darken(white, 5%);
+            border: none;
+            border-radius: 2px;
+            box-shadow: none;
+            color: lighten(black, 20%);
+            height: 2.1em;
+            line-height: inherit;
+            padding: 0.4em 1.6em 0.4em 0.6em;
+
+            .select2-chosen {
+                font-weight: bold;
+
+                [class^="flag-"] {
+                    margin-right: 0.1em;
+                    vertical-align: -8%;
+                }
+            }
+
+            .select2-arrow {
+                background: transparent;
+                border-bottom: transparent 0.4em solid;
+                border-left: transparent 0.3em solid;
+                border-right: transparent 0.3em solid;
+                border-top: lighten(black, 40%) 0.4em solid;
+                height: 0;
+                margin-top: -0.1em;
+                position: absolute;
+                right: 0.6em;
+                top: 50%;
+                width: 0;
+            }
+
+
+            &:hover, &.hover {
+                background-color: white;
+                color: black;
+                box-shadow: 0 1px 4px fade(black, 20%);
+            }
+
+        }
+
+    }
+
+    .select2-container.select-hotel-name {
+        width: 300px;
+
+        .select2-choice {
+            align-items: center;
+            background: transparent;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            color: @lightblue !important;
+            display: flex;
+            float: left;
+            line-height: 1.42;
+            padding: 0;
+
+            .select2-chosen {
+                border-bottom: dashed 1px fade(@lightblue, 40%);
+                margin-right: 0.5em;
+
+                &:hover {
+                    border-bottom-color: @lightblue;
+                    color: lighten(@lightblue, 15%) !important;
+                }
+            }
+
+            .select2-search-choice-close {
+                background: none;
+                color: inherit;
+                font-size: 1em;
+                line-height: 1;
+                position: static;
+
+                &:hover {
+                    color: lighten(@lightblue, 15%) !important;
+                }
+
+                &:before {
+                    content: '×';
+                    height: 1em;
+                    width: 1em;
+                }
+            }
+        }
+
+        .select2-arrow {
+            display: none;
+        }
+
+        &.select2-dropdown-open {
+
+            .select2-choice {
+                color: lighten(@lightblue, 15%) !important;
+            }
+        }
+    }
+
+    .select {
+        background-color: darken(white, 5%);
+        border-radius: 2px;
+        color: lighten(black, 20%);
+        cursor: pointer;
+        height: 2.1em;
+        padding: 0.4em 1.6em 0.4em 0.6em;
+        position: relative;
+        transition: background-color 0.3s;
+
+        &:hover, &.hover {
+            background-color: white;
+            color: black;
+            box-shadow: 0 1px 4px fade(black, 20%);
+        }
+
+        &:active, &.active, &:focus, &.focus {
+            box-shadow: 0 1px 6px fade(black, 30%) inset;
+        }
+
+        &:before {
+            border-bottom: transparent 0.4em solid;
+            border-left: transparent 0.3em solid;
+            border-right: transparent 0.3em solid;
+            border-top: lighten(black, 40%) 0.4em solid;
+            content: "";
+            height: 0;
+            margin-top: -0.1em;
+            position: absolute;
+            right: 0.6em;
+            top: 50%;
+            width: 0;
+        }
+
+        .value {
+            font-weight: bold;
+        }
+
+        .small {
+            float: right;
+            font-size: 80%;
+        }
+
+        span.small {
+            color: lighten(black, 50%);
+            margin-top: 0.1rem;
+        }
+    }
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+    background: darken(white, 2%);
+    border: none;
+    border-top: 1px darken(white, 15%) solid;
+    border-radius: 0 0 2px 2px;
+    font-size: 1.6rem * 0.9;
+    line-height: 1.4;
+    margin-top: -0.2em;
+    padding: 0;
+
+    .datepicker {
+        padding: 0;
+        text-align: center;
+
+        &>label {
+            margin-bottom: 0.5em;
+            margin-top: 0.5em;
+            padding: 0.2em 0.3em;
+
+            &:hover {
+                background-color: lighten(@orange, 30%);
+            }
+        }
+    }
+
+    &:before, &:after {
+        display: none;
+    }
+
+    table {
+        display: block;
+    }
+
+    tr {
+        height: auto;
+    }
+
+    td, th {
+        cursor: pointer;
+        height: auto;
+    }
+
+    thead {
+        display: block;
+
+        tr {
+            display: flex;
+            justify-content: space-between;
+
+            th {
+                border-radius: 0;
+                display: block;
+                height: auto;
+                padding: 0.7em;
+                width: auto;
+
+                &.prev, &.next {
+                    padding-left: 1em;
+                    padding-right: 1em;
+                    width: auto;
+
+                    &.disabled {
+                        color: lighten(black, 90%);
+                        cursor: default;
+
+                        &:hover {
+                            background-color: transparent;
+                            color: lighten(black, 90%);
+                        }
+                    }
+                }
+
+                &:hover {
+                    background-color: lighten(@orange, 30%);
+                }
+            }
+        }
+
+        .dow {
+            display: none;
+        }
+    }
+
+    tbody {
+        background: white;
+        display: block;
+        padding: 0.5em 0.8em;
+
+        tr {
+            display: flex;
+            height: auto;
+            max-width: 20rem;
+            position: relative;
+        }
+    }
+
+    .datepicker-days {
+
+        tbody {
+
+            tr {
+
+                td {
+                    border-radius: 0;
+                    display: inline-block;
+                    height: auto;
+                    text-align: center;
+                    text-shadow: none;
+                    width: 2em;
+
+                    &:nth-child(6), &:nth-child(7){
+                        color: desaturate(@red, 20%);
+                    }
+
+                    &.active, &.active:hover {
+                        background-color: @brightblue;
+                        color: white;
+                        text-shadow: none;
+                    }
+
+                    &:hover {
+                        background-color: lighten(@orange, 30%);
+                    }
+
+                    &.old, &.new, &.disabled {
+                        color: lighten(black, 90%);
+                        cursor: default;
+
+                        &:hover {
+                            background-color: transparent;
+                            color: lighten(black, 90%);
+                        }
+                    }
+
+                    &.old, &.new {
+                        height: 0;
+                        padding: 0;
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+    }
+
+    .datepicker-months, .datepicker-years {
+
+        td {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            width: 100%;
+
+            span {
+                border-radius: 0;
+                display: inline-block;
+                height: auto;
+                line-height: inherit;
+                margin: 0;
+                text-align: center;
+                text-shadow: none;
+                padding: 0.7em 0;
+                width: 25%;
+
+                &.active, &.active:hover {
+                    background-color: @brightblue;
+                    color: white;
+                    text-shadow: none;
+                }
+
+                &:hover {
+                    background-color: lighten(@orange, 30%);
+                }
+
+                &.old, &.new, &.disabled {
+                    color: lighten(black, 90%);
+
+                    &:hover {
+                        background-color: transparent;
+                        color: lighten(black, 90%);
+                    }
+                }
+
+                &.old, &.new {
+                    height: 0;
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+}
+
+
+.select2-drop {
+    background: darken(white, 2%);
+    border: none;
+    border-radius: 0 0 2px 2px;
+    font-size: 90%;
+    margin-top: 1px;
+
+    .select2-search {
+        display: none;
+        margin-top: 0.3em;
+
+        .select2-input {
+            background: white url(../img/icon-search.png) 97% center no-repeat;
+            border-color: darken(white, 25%);
+            border-radius: 2px;
+            box-shadow: 0 2px 2px fade(black, 5%) inset;
+            color: lighten(black, 40%);
+            padding: 0.2em 0.4em;
+        }
+    }
+
+    .select2-results {
+        max-height: 18em;
+
+        .select2-result-label {
+            padding: 0.5em;
+            padding-left: 0.8em;
+        }
+
+        .select2-result-with-children {
+            > .select2-result-label {
+                color: lighten(black, 40%);
+                font-size: 80%;
+                font-weight: normal;
+                padding-top: 0.8em;
+            }
+        }
+
+        [class^="flag-"] {
+            margin-right: 0.1em;
+            vertical-align: -12%;
+        }
+
+        .select2-result {
+            margin-bottom: 0;
+        }
+
+        .select2-highlighted {
+            background-color: lighten(@orange, 30%);
+            color: lighten(black, 20%);
+        }
+    }
+
+    &.select2-search-country {
+        border-top: 1px darken(white, 15%) solid;
+        margin-top: -1px;
+
+        .select2-search {
+            display: block;
+        }
+
+        .select2-result-label {
+            padding-left: 0.5em;
+        }
+    }
+
+    &.select2-hotel-name {
+        margin-top: 0.6em;
+
+        .select2-search {
+            display: block;
+            padding-left: 0.4em;
+            padding-right: 0.4em;
+
+            &:before {
+                color: lighten(black, 50%);
+                content: 'Поиск по названию';
+                font-size: 85%;
+            }
+
+            input {
+                border-radius: 0;
+                display: block;
+            }
+        }
+
+        &:before {
+            border: 0.8em solid transparent;
+            border-bottom-color: #fafafa;
+            content: '';
+            height: 0;
+            left: 2em;
+            margin-left: -0.8em;
+            position: absolute;
+            top: -1.5em;
+            width: 0;
+        }
+
+        .select2-results {
+            max-height: 13.5em;
+
+            .select2-no-results {
+                background: transparent;
+            }
+
+            .select2-result-label {
+                font-size: 95%;
+                padding: 0.2em 0.4em;
+
+                p {
+                    margin-bottom: 0;
+
+                    &.hotel-title {
+                        height: 1.4em;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+
+                        .hotel-stars {
+                            color: @orange;
+                        }
+                    }
+
+                    &.hotel-resort {
+                        color: lighten(black, 60%);
+                        font-size: 75%;
+                    }
+                }
+            }
+        }
+    }
+
+
+}

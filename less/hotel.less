@@ -1,0 +1,633 @@
+@reviews-text: spin(desaturate(lighten(@darkblue, 55%), 30%), 10);
+
+#page_hotel {
+
+    .hotel-intro {
+        position: relative;
+
+        .description {
+            margin-bottom: 2em;
+            min-height: 20rem;
+
+            h4 {
+                display: none;
+            }
+
+            .text-empty {
+                color: lighten(black, 60%);
+                padding-top: 6em;
+                text-align: center;
+            }
+
+            .text-longread {
+                height: 17.5rem;
+                overflow: hidden;
+
+                &:after {
+                    background: linear-gradient(to bottom, fade(white, 0%) 0%, white 70%);
+                    content: "";
+                    height: 7rem;
+                    left: 0;
+                    position: absolute;
+                    top: 10.5rem;
+                    width: 100%;
+                }
+            }
+
+            @media (min-width: @screen-lg){
+                min-height: 27rem;
+
+                .text-longread {
+                    height: 25rem;
+
+                    &:after {
+                        height: 9rem;
+                        top: 16rem;
+                    }
+                }
+            }
+
+            a {
+                font-size: 90%;
+            }
+
+            &.description-recommended {
+                background: @beige url('../img/recommended.png') 95% top no-repeat;
+                height: 20rem;
+                min-height: 20rem;
+                overflow: hidden;
+                padding: 1em 1.5em;
+
+                h4 {
+                    display: block;
+                }
+
+                .text-empty {
+                    color: desaturate(darken(@beige, 50%), 50%);
+                }
+
+                .text-longread {
+                    height: 6.5em;
+
+                    &:after {
+                        background: linear-gradient(to bottom, fade(@beige, 0%) 0%, @beige 70%);
+                        left: auto;
+                        top: 8.5rem;
+                        width: 85%;
+                    }
+                }
+
+                .text-expert  {
+                    font-size: 90%;
+                    line-height: 1.6;
+                    width: 90%;
+
+                    .readall {
+                        display: none;
+                    }
+                }
+
+                @media (min-width: @screen-lg) {
+                    height: 27rem;
+
+                    .text-longread {
+                        height: 11.5em;
+
+                        &:after {
+                            top: 13.5rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .fotorama {
+            background-color: darken(white, 3%);
+            max-height: 440px;
+        }
+
+        .map-small {
+            position: relative;
+
+            a {
+                background-color: fade(white, 50%);
+                border: none;
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                transition: background-color 0.3s;
+                z-index: 1;
+
+                &:hover {
+                    background-color: fade(white, 20%);
+                }
+            }
+
+            .map {
+                height: 8em;
+                width: 100%;
+            }
+        }
+
+    }
+
+    .hotel-tours {
+
+        .bar-blue {
+            padding: 0.5em 1.6em 1em;
+            text-align: left;
+            width: 100%;
+
+            .btn-medium {
+                margin-top: 0.3em;
+            }
+
+            .flex-row {
+                align-items: center;
+            }
+        }
+
+        h2 {
+            white-space: nowrap;
+        }
+
+        .text-warning {
+            font-size: 50%;
+            font-weight: normal;
+            margin-left: 1em;
+            vertical-align: 10%;
+
+            .glyphicon {
+                margin-right: 0.2em;
+                vertical-align: -5%;
+            }
+        }
+
+        .flex-table>.line {
+            padding-bottom: 0.5em;
+            padding-top: 0.5em;
+            min-height: 4em;
+
+            &.sold, &.wait, &.error {
+
+                .block {
+                    opacity: 0.6;
+                }
+            }
+
+            .progress {
+                margin: 0 7%;
+                width: 86%;
+            }
+
+            &.error, &.wait {
+
+                .block.buy {
+                    opacity: 1;
+                }
+
+                .block.price {
+                    .small {
+                        color: darken(@red, 10%);
+                    }
+                }
+            }
+
+            &.empty {
+                justify-content: space-around;
+                text-align: center;
+                padding-bottom: 2em;
+
+                p {
+                    color: lighten(black, 60%);
+                    margin-bottom: 2em;
+                }
+
+                .btn {
+                    display: block;
+                    margin: 0 auto 0.5em;
+                    padding-left: 2em;
+                    padding-right: 2em;
+                }
+            }
+
+            &.white {
+                background-color: transparent;
+            }
+
+            .block {
+                transition: opacity 0.3s;
+
+                h4, p {
+                    margin-bottom: 0;
+                    margin-top: 0;
+                }
+
+                &.apartment {
+                    margin-right: 3%;
+                    width: 18%;
+                }
+
+                &.buy {
+                    text-align: right;
+                    width: 15%;
+
+                    .btn {
+                        padding-left: 0.2em;
+                        padding-right: 0.2em;
+                        width: 100%;
+                    }
+                }
+
+                &.price {
+                    text-align: right;
+                    width: 19%;
+
+                    p {
+                        line-height: 1;
+
+                        &.strong {
+                            font-size: 150%;
+                        }
+
+                        &.small {
+                            color: @green;
+                            height: 1em;
+                            opacity: 1;
+                            transition: height 0.3s, opacity 0.3s;
+
+                            &.off {
+                                height: 0;
+                                opacity: 0;
+                            }
+                        }
+                    }
+                }
+
+                &.date, &.nights, &.food {
+                    background-position: left center;
+                    background-repeat: no-repeat;
+
+                    p {
+                        line-height: 1;
+                    }
+                }
+
+                &.date {
+                    background-image: url('../img/tour-date.png');
+                    padding-left: 2em;
+                    width: 11%;
+                }
+
+                &.nights {
+                    background-image: url('../img/tour-nights.png');
+                    padding-left: 2em;
+                    width: 11%;
+                }
+
+                &.food {
+                    background-image: url('../img/tour-food.png');
+                    padding-left: 1.5em;
+                    width: 18%;
+                }
+
+                &.load-more {
+                    width: 100%;
+
+                    .icon-arrow-down {
+                        font-size: 80%;
+                    }
+                }
+            }
+        }
+    }
+
+    .hotel-tours-footnotes {
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 2em;
+
+            .block {
+                width: 15em;
+            }
+
+            p.small {
+                color: lighten(black, 30%);
+                font-size: 90%;
+                font-weight: normal;
+                line-height: 1.6;
+                margin-bottom: 0.5em;
+            }
+
+            .bar {
+                margin: 0 0.5em;
+                vertical-align: -10%;
+            }
+        }
+    }
+
+    .hotel-reviews {
+        background: @darkblue linear-gradient(to bottom, desaturate(lighten(@darkblue, 17%), 15%) 0%, @darkblue 100%);
+        color: white;
+        height: 32em;
+        overflow: hidden;
+
+        .nav {
+
+            .current {
+                background-color: @darkblue;
+                color: white;
+                cursor: default;
+                outline-color: @darkblue;
+            }
+
+            .link-label {
+                color: @reviews-text;
+            }
+        }
+
+        .hotel-rating {
+            color: @reviews-text;
+            padding-top: 6em;
+
+            p {
+                margin-bottom: 0;
+            }
+
+            .value {
+                border-radius: 0.8rem;
+                color: white;
+                display: inline-block;
+                font-size: 150%;
+                margin-bottom: 2rem;
+                margin-top: 1rem;
+                padding: 0.2rem 1.5rem;
+
+                &.rating-good {
+                    background-color: @green;
+                }
+            }
+        }
+
+        .review-pages {
+            padding-top: 1em;
+            position: relative;
+
+            .review-page {
+                cursor: pointer;
+                background-color: @beige;
+                box-shadow: 0 16px 64px fade(black, 50%);
+                color: lighten(black, 30%);
+                height: 30em;
+                margin-top: 0;
+                padding: 2em 5em;
+                position: relative;
+                transition: margin 0.3s;
+                //transform: translate3d(0, 0, 0);
+
+                &:after {
+                    background: linear-gradient(to bottom, fade(@beige, 0%) 0%, @beige 70%);
+                    content: "";
+                    display: none;
+                    height: 6em;
+                    left: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 18.5em;
+                }
+
+                &:hover {
+                    margin-top: -0.5em;
+                }
+
+                .flex-justify .strong {
+                    display: inline-block;
+                    font-weight: 600;
+                    font-size: 110%;
+                    margin-bottom: 1em;
+                    margin-right: 0.5em;
+                }
+
+                .arrow {
+                    border: none;
+                    color: desaturate(darken(@beige, 50%), 50%);
+                    display: block;
+                    font-size: 200%;
+                    height: 12rem;
+                    opacity: 0.6;
+                    padding-top: 4rem;
+                    position: absolute;
+                    text-align: center;
+                    top: 16rem;
+                    width: 6rem;
+                    z-index: 100;
+
+                    &.arrow-left {
+                        left: 1rem;
+                    }
+
+                    &.arrow-right {
+                        right: 1rem;
+                    }
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+
+                &.reviews-empty {
+                    cursor: default;
+
+                    &:hover {
+                        margin-top: 0em;
+                    }
+
+                    .arrow { display: none; }
+
+                    .flex-justify { display: none; }
+
+                    .text-longread {
+                        color: desaturate(darken(@beige, 50%), 50%);
+                        font-size: 100%;
+                        padding-top: 3em;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .hotel-description {
+
+        .text-longread {
+            height: 36rem;
+            overflow: hidden;
+
+            &:after {
+                background: linear-gradient(to bottom, fade(white, 0%) 0%, white 70%);
+                content: "";
+                height: 20rem;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 24rem;
+            }
+        }
+
+        .text-empty {
+            color: lighten(black, 60%);
+            padding-top: 6em;
+            text-align: center;
+        }
+
+        .readall {
+            font-size: 90%;
+            position: absolute;
+            top: 39rem;
+        }
+
+        .map {
+            height: 36rem;
+            width: 100%;
+        }
+    }
+
+    .hotel-services {
+
+        .columns {
+            columns: 4;
+
+            .service {
+                break-inside: avoid;
+            }
+        }
+
+        h4 {
+            background-position: left 1px;
+            background-repeat: no-repeat;
+            font-size: 100%;
+            line-height: 1.3;
+            margin-bottom: 0.5em;
+            padding: 0.2em 0 0.1em 3rem;
+
+            &.beach {
+                background-image: url(../img/services/beach.png);
+            }
+            &.business {
+                background-image: url(../img/services/business.png);
+            }
+            &.cleaning {
+                background-image: url(../img/services/cleaning.png);
+            }
+            &.comfort {
+                background-image: url(../img/services/comfort.png);
+            }
+            &.entertainment {
+                background-image: url(../img/services/entertainment.png);
+            }
+            &.food {
+                background-image: url(../img/services/food.png);
+            }
+            &.hotel {
+                background-image: url(../img/services/hotel.png);
+            }
+            &.network {
+                background-image: url(../img/services/network.png);
+            }
+            &.parking {
+                background-image: url(../img/services/parking.png);
+            }
+            &.transport {
+                background-image: url(../img/services/transport.png);
+            }
+            &.water {
+                background-image: url(../img/services/water.png);
+            }
+            &.beauty {
+                background-image: url(../img/services/beauty.png);
+            }
+            &.sport {
+                background-image: url(../img/services/sport.png);
+            }
+            &.child {
+                background-image: url(../img/services/child.png);
+            }
+            &.smoke {
+                background-image: url(../img/services/smoke.png);
+            }
+            &.key {
+                background-image: url(../img/services/key.png);
+            }
+        }
+
+        ul {
+            color: lighten(black, 40%);
+            list-style-type: none;
+            margin-bottom: 1.2em;
+            padding-left: 3rem;
+
+            li {
+                font-size: 90%;
+                margin-bottom: 0.3em;
+            }
+        }
+    }
+
+}
+
+/* MODALS */
+
+.modal {
+
+    .modal-content {
+        border-radius: 0;
+
+        .modal-body {
+            padding: 4em 10%;
+
+            .text-longread {
+                margin-bottom: 3em;
+            }
+        }
+    }
+
+    &.modal-hotel-description {
+
+    }
+
+    &.modal-hotel-review {
+
+        .nav {
+            margin-bottom: 3em;
+        }
+
+        .modal-content {
+            background-color: @beige;
+
+            .name {
+                display: inline-block;
+                font-weight: 600;
+                font-size: 110%;
+                margin-bottom: 1em;
+                margin-right: 0.5em;
+            }
+
+            .flex-justify {
+
+                .current {
+                    background-color: desaturate(darken(@beige, 10%), 20%);
+                    cursor: default;
+                    outline-color: desaturate(darken(@beige, 10%), 20%);
+                }
+            }
+
+            .text-longread {
+                font-size: 100%;
+            }
+        }
+    }
+}

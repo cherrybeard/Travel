@@ -1,0 +1,175 @@
+#page_index {
+    h1 {
+        font-size: 48px;
+    }
+
+
+    .search.search-intro {
+        background-position: center bottom;
+    }
+
+    .spotlight {
+
+        .heading {
+            margin-bottom: 3em;
+
+            h1 {
+                margin-bottom: 0.3em;
+            }
+
+            .small {
+                color: lighten(black, 60%);
+                font-size: 70%;
+            }
+        }
+
+        a {
+            background-color: white;
+            font-size: 105%;
+            display: block;
+            outline: solid white 0.5em;
+            position: relative;
+            transition: margin-top 0.3s;
+
+            h5 {
+                font-size: 90%;
+                font-weight: normal;
+                margin-bottom: 0;
+            }
+
+            .link-dashed {
+                border-bottom-width: 1px;
+            }
+
+            .price {
+                color: lighten(black, 40%);
+            }
+
+            img {
+            }
+
+            &:hover {
+                box-shadow: 0 2px 20px fade(black, 40%);
+                margin-top: -0.3em;
+
+                img {
+                    opacity: 0.95;
+                }
+
+                .price {
+                    color: lighten(black, 30%);
+                }
+            }
+        }
+    }
+
+    .reviews-intro {
+
+        .bubble {
+            min-height: 9rem;
+            padding: 1.2rem 2.4rem;
+
+            p {
+                margin-bottom: 0;
+            }
+
+            .date {
+                color: lighten(black, 70%);
+            }
+
+            &:after, &:before {
+                margin-top: -1.5rem;
+                top: 50%;
+            }
+        }
+
+        .country {
+            font-size: 75%;
+        }
+
+        .view-all {
+            display: block;
+            padding-top: 1.7em;
+        }
+
+    }
+
+    .white-blocks {
+
+        .white-block {
+            background-color: white;
+            padding: 1em 2em 2em;
+
+            h3 {
+                line-height: 1.2;
+            }
+
+            p {
+                line-height: 1.6;
+                font-size: 85%;
+            }
+
+            &.booking-online {
+                background: white url('../img/booking-online.jpg') bottom right no-repeat;
+                border-bottom: solid 1px lighten(black, 90%);
+                padding-bottom: 8.5em;
+
+                p {
+                    width: 50%;
+                }
+
+                @media (min-width: @screen-lg) {
+                    padding-bottom: 6em;
+                }
+
+            }
+
+            &.recommendations {
+                background: white url('../img/recommended.png') 90% top no-repeat;
+                margin-bottom: 2em;
+
+                h3 {
+                    width: 80%;
+                }
+            }
+
+            &.payment {
+                padding-top: 2em;
+
+                .payment-icons {
+                    padding-top: 0.5em;
+
+                    span {
+                        margin-right: 1em;
+                    }
+                }
+            }
+
+            &.experts {
+                background: white url('../img/expert-photo.png') bottom right no-repeat;
+
+                p {
+                    width: 60%;
+                }
+
+                @media (min-width: @screen-lg) {
+                    padding-bottom: 4em;
+                }
+            }
+        }
+    }
+
+}
+
+body.modal-open {
+
+    #page_index {
+
+        .search.search-intro {
+
+            h1 {
+                text-shadow: none;
+            }
+        }
+    }
+}

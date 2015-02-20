@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Viasun.travel — Регистрация</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<div class="navbar navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <div class="logo text-hide">Viasun.travel</div>
+                <p class="small">онлайн-турагентство</p>
+            </a>
+        </div>
+        <!--navbar-header-->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="about.html" class="no-underline"><span class="underlined">Об агентстве</span></a>
+                </li>
+                <li>
+                    <a href="reviews.html" class="no-underline"><span class="underlined">Отзывы</span></a>
+                </li>
+                <li>
+                    <a href="questions.html" class="no-underline"><span class="underlined">Вопрос-ответ</span></a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="navbar-phone">
+                    <div>8 800 555 7853</div>
+                    <p class="small pull-right">10:00&mdash;21:00</p>
+                </li>
+                <li class="navbar-login">
+                    <a href="auth.html" class="no-underline">
+                        <span class="glyphicon glyphicon-user"></span> <span class="underlined">Войти</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--navbar-collapse-->
+    </div>
+</div>
+<!--navbar-->
+
+<div id="page_register" class="page-white">
+    <div class="container">
+
+        <!--block header-->
+        <header class="split">
+            <!--block title-->
+            <h1>Регистрация</h1>
+
+            <div class="alert alert-danger">Пользователь с таким адресом уже зарегистрирован. <a href="recover-pass.html">Забыли пароль?</a></div>
+            <!--endblock-->
+        </header>
+        <div class="ruler"></div>
+        <!--endblock-->
+
+        <!--block content-->
+        <div class="split">
+            <div class="row">
+                <div class="col-md-6">
+                    <form class="form-flex register" role="form">
+                        <div class="line small">
+                            <div class="section">
+                                <div class="form-group phone">Phone</div>
+                                <div class="form-group email">Email</div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="section">
+                                <div class="form-group phone">
+                                    <label class="sr-only" for="reg-phone">Телефон</label>
+                                    <input class="form-control" id="reg-phone" type="text" placeholder="+7">
+                                </div>
+                                <div class="form-group email">
+                                    <label class="sr-only" for="edit-email">Email</label>
+                                    <input class="form-control" id="edit-email" type="text" placeholder="ilove@viasun.ru">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line small">
+                            <div class="section">
+                                <div class="form-group">Имя</div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="section">
+                                <div class="form-group">
+                                    <label class="sr-only" for="profile-name">Имя</label>
+                                    <input class="form-control" id="profile-name" type="text" placeholder="Иван">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line small">
+                            <div class="section">
+                                <div class="form-group">
+                                    Пароль
+                                </div>
+                                <div class="form-group">
+                                    Повторите пароль
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="section">
+                                <div class="form-group">
+                                    <label class="sr-only" for="profile-pass">Пароль</label>
+                                    <input class="form-control" id="profile-pass" type="password">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="profile-repass">Повторите пароль</label>
+                                    <input class="form-control" id="profile-repass" type="password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="section">
+                                <div class="form-group small">
+                                    <input type="checkbox" id="subscribe" class="hidden" checked>
+                                    <label for="subscribe">Получать спецпредложения по email</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="section">
+                                <div class="form-group">
+                                    <a href="orderlist.html" class="btn btn-yellow">Регистрация</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                    <div class="container">
+                        <div class="header">
+                            <h4>Зарегистрируйтесь и получите</h4>
+                        </div>
+                        <ul class="list-ok list-multiline">
+                            <li>
+                                <h5>Скидки и бонусы</h5>
+
+                                <p class="small">Копите бонусы — получайте скидки</p>
+                            </li>
+                            <li>
+                                <h5>Быстрая покупка</h5>
+
+                                <p class="small">Повторные покупки делаются в&nbsp;2&nbsp;клика</p>
+                            </li>
+                            <li>
+                                <h5>Лучшие предложения</h5>
+
+                                <p class="small">Все актуальные предложения в&nbsp;вашей почте</p>
+                            </li>
+                            <li>
+                                <h5>Быстрое и удобное общение</h5>
+
+                                <p class="small">Консультации с&nbsp;менеджерами по&nbsp;туризму</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--endblock-->
+
+    </div>
+</div>
+<!--page-->
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <ul class="footer-nav">
+                    <li><a href="#">Об агентстве</a></li>
+                    <li><a href="#">Вопрос-ответ</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <p>&copy; 2014 — ООО «Виасан», ИНН 5406717327, ОГРН 1125476109758</p>
+                <p>Вся информация, размещённая на сайте, носит исключительно информационный характер и не является рекламой и публичной офертой</p>
+                <p class="payment-icons">
+                    <span class="inline bank"></span>
+                    <span class="inline visa"></span>
+                    <span class="inline mc"></span>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <div class="text-right">
+                    <p class="footer-phone">8 800 333 4576</p>
+                    <p>Бесплатный звонок по России</p>
+                    <p>
+                        <a class="logo-cs" href="http://constructivesolutions.ru/" target="_blank">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	viewBox="0 0 111.75 64.791" enable-background="new 0 0 111.75 64.791" xml:space="preserve">
+                                <path class="cs" d="M79.375,0.041C61.494,0.041,47,14.416,47,32.416H32.375V0C14.495,0,0,14.494,0,32.375C0,50.255,14.495,64.75,32.375,64.75
+	V37.385c2.379,15.605,15.8,27.406,32,27.406c17.881,0,32.375-14.375,32.375-32.375h15C111.75,14.416,97.256,0.041,79.375,0.041z"/>
+                            </svg>
+                            <span class="text">Constructive<br>Solutions</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

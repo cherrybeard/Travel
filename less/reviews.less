@@ -1,0 +1,91 @@
+#page_reviews {
+    .review {
+        margin-bottom: 2em;
+
+        .flex-justify {
+            margin-bottom: 1em;
+        }
+
+        .round-photo {
+            height: 6em;
+            width: 6em;
+        }
+
+        .name {
+            margin-bottom: 0.3em;
+        }
+
+        .bubble {
+            padding: 2em;
+
+            .highlight, p span {
+                background-color: #ffe495;
+                padding-left: 0.2em;
+                padding-right: 0.2em;
+            }
+        }
+
+        &.answer {
+            margin-top: -1em;
+
+            .bubble {
+                background-color: @beige;
+                border-color: @beige-border;
+
+                &:before, &:after {
+                    border: solid 1em transparent;
+                    left: auto;
+                }
+
+                &:before {
+                    border-left-color: @beige-border;
+                    right: -1em;
+                }
+
+                &:after {
+                    border-left-color: @beige;
+                    right: -0.9em;
+                }
+            }
+
+            .subscript {
+                margin-top: 1em;
+                margin-bottom: 0;
+            }
+        }
+
+        &.create {
+            .bubble {
+                background-color: @beige;
+                border-color: @beige-border;
+                padding-top: 0.5em;
+
+                &:before {
+                    border-right-color: @beige-border;
+                }
+
+                &:after {
+                    border-right-color: @beige;
+                }
+
+                .form-flex {
+                    background-color: transparent;
+                    border: none;
+                    box-shadow: none;
+                    margin-bottom: 0;
+
+                    input[type="text"], textarea {
+                        text-transform: none;
+                        letter-spacing: 0;
+                    }
+                }
+
+                .success {
+                    background: url('../img/ok-big.png') left 80% no-repeat;
+                    padding-left: 3em;
+                    padding-top: 2em;
+                }
+            }
+        }
+    }
+}

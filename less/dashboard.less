@@ -1,0 +1,195 @@
+@screen-lg-min: 1200px;
+
+#page_orderlist {
+
+    .order-item {
+        border-bottom: solid 1px lighten(black, 95%);
+        padding-bottom: 3em;
+        padding-top: 3em;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        .small {
+            font-size: 75%;
+        }
+
+        .photo {
+            background-position: center right;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 5em;
+
+            @media (min-width: @screen-lg-min) {
+                height: 6em;
+            }
+
+            .arrow {
+                position: absolute;
+            }
+        }
+
+        .title {
+
+            h4 {
+                line-height: 1.6;
+                margin-top: 0;
+            }
+
+            .stars {
+                color: @orange;
+                margin-bottom: 0;
+                white-space: nowrap;
+            }
+        }
+
+        .pay {
+            text-align: center;
+        }
+    }
+
+}
+
+#page_order {
+
+    .order-details {
+
+        .hotel-photo {
+            width: 100%;
+        }
+
+        .hotel-name {
+            margin-bottom: 0.2em;
+            margin-top: 0.2em;
+        }
+
+        .stars {
+            color: @orange;
+            margin-top: 1em;
+            margin-bottom: 0;
+        }
+
+        .flight {
+            margin-bottom: 0.9em;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .arrow {
+                display: none;
+            }
+
+            @media (min-width: @screen-lg-min) {
+
+                .arrow {
+                    display: block;
+                }
+
+                .field:last-child {
+                    padding-left: 1.5em;
+                }
+            }
+        }
+
+        .flight-header {
+            color: desaturate(darken(@beige, 15%), 30%);
+            margin-bottom: 0.3em;
+
+            img {
+                margin-left: 0.5em;
+            }
+        }
+    }
+
+    .list-doc {
+        padding-left: 1.5em;
+
+        li {
+            float: left;
+            margin-bottom: 0.5em;
+            width: 50%;
+        }
+    }
+
+}
+
+#page_support {
+
+    .form-flex.support-list {
+
+        .line {
+            font-weight: normal;
+            text-transform: none;
+        }
+
+        .number {
+            width: 10%;
+        }
+
+        .theme {
+            width: 40%;
+        }
+
+        .message {
+            width: 45%;
+        }
+
+        .date {
+            width: 15%;
+        }
+
+    }
+
+    .form-flex.support-write {
+
+        .theme {
+            width: 50%;
+        }
+
+        .message {
+            textarea {
+                resize: vertical;
+            }
+        }
+    }
+}
+
+#page_support-detail {
+
+    .support-message {
+        border-bottom: solid 1px lighten(black, 95%);
+        font-size: 90%;
+        padding: 2rem 1rem;
+        margin-left: -1rem;
+        margin-right: -1rem;
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &.message-reply {
+            background-color: lighten(black, 98%);
+        }
+    }
+}
+
+#page_edit-profile {
+
+    .form-flex.profile-contacts {
+
+        .section {
+            width: 100%;
+        }
+
+        .phone, .email {
+            width: 30%;
+        }
+
+        .password {
+            line-height: 1.8em;
+            padding-left: 2rem;
+        }
+    }
+}

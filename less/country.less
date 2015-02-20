@@ -1,0 +1,197 @@
+#page_country {
+
+    .search.search-intro {
+        padding-bottom: 4em;
+        padding-top: 1em;
+
+        h1 {
+            margin-bottom: 0.5em;
+
+            .flag-big {
+                box-shadow: 0 2px 4px fade(black, 20%);
+                margin-left: 0.2em;
+                vertical-align: -25%;
+            }
+        }
+
+        h5 {
+            color: white;
+            font-weight: normal;
+            margin-bottom: 2em;
+            text-align: center;
+        }
+    }
+
+    .advantages {
+
+        .advantage {
+            background: white;
+            font-weight: normal;
+            margin-left: -0.2em;
+            margin-right: -0.2em;
+            padding-top: 1em;
+            text-align: center;
+
+            .text {
+                height: 9em;
+                padding: 1em;
+
+                h4 {
+                    font-size: 125%;
+                    line-height: 1.1;
+                    margin-bottom: 0.5em;
+                }
+
+                p {
+                    color: lighten(black, 45%);
+                    font-size: 85%;
+                    line-height: 1.2;
+                }
+
+            }
+
+            .img {
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 9em;
+                width: 100%;
+
+                @media (min-width: @screen-lg) {
+                    height: 11em;
+                }
+            }
+
+            &.advantage-online {
+                .img {
+                    background-image: url('../img/booking-online.jpg');
+                    background-position: right bottom;
+                }
+            }
+
+            &.advantage-turoperators {
+                border: @orange solid 0.3em;
+                border-bottom-width: 0.2em;
+
+                &:before, &:after {
+                    content: '';
+                    height: 0;
+                    left: 50%;
+                    position: absolute;
+                    width: 0;
+                }
+
+                &:before {
+                    border-left: transparent 6.95em solid;
+                    border-right: transparent 6.95em solid;
+                    border-top: orange 1.15em solid;
+                    bottom: -1.15em;
+                    margin-left: -6.9em;
+                }
+
+                &:after {
+                    border-left: transparent 6.75em solid;
+                    border-right: transparent 6.75em solid;
+                    border-top: white 1.1em solid;
+                    bottom: -0.85em;
+                    margin-left: -6.75em;
+                }
+
+                .text {
+                    height: 8.8em;
+                }
+
+                .img {
+                    background-image: url('../img/shield.png');
+                }
+
+                @media (min-width: @screen-lg) {
+
+                    &:before {
+                        border-left-width: 8.5em;
+                        border-right-width: 8.5em;
+                        margin-left: -8.5em;
+                    }
+
+                    &:after {
+                        border-left-width: 8em;
+                        border-right-width: 8em;
+                        margin-left: -8em;
+                    }
+                }
+
+             }
+
+            &.advantage-help {
+                .img {
+                    background-image: url('../img/expert-photo.png');
+                    background-position: center bottom;
+                }
+            }
+
+            &.advantage-recommendations {
+                .img {
+                    background-image: url('../img/badge-palm-big.png');
+                }
+            }
+        }
+    }
+
+    .reviews {
+        background: darken(white, 6%);
+        padding-bottom: 3em;
+        padding-top: 3em;
+
+        .bubble {
+            height: 16em;
+            padding: 2em;
+            position: relative;
+
+            .date {
+                color: lighten(black, 70%);
+            }
+
+            &:before, &:after {
+                border-right-color: transparent;
+                left: 1.5em;
+                top: auto;
+            }
+
+            &:before {
+                border-top-color: lighten(black, 90%);
+                bottom: -2.3em;
+            }
+
+            &:after {
+                border-top-color: white;
+                bottom: -2.2em;
+            }
+
+            @media (min-width: @screen-lg) {
+                height: 14em;
+            }
+        }
+
+        .author {
+            align-items: flex-start;
+            display: flex;
+            justify-content: flex-start;
+            padding-top: 2em;
+
+            .author-text {
+                width: 50%;
+
+                .country {
+                font-size: 75%;
+                }
+            }
+
+            .round-photo {
+                margin-left: 1em;
+                margin-right: 2em;
+                width: 20%;
+            }
+        }
+    }
+
+}

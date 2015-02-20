@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Таиланд из Москвы — Viasun.travel</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/select2-bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.min.css">
+</head>
+
+<body>
+
+<div class="navbar navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <div class="logo text-hide">Viasun.travel</div>
+                <p class="small">онлайн-турагентство</p>
+            </a>
+        </div><!--navbar-header-->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="about.html" class="no-underline"><span class="underlined">Об агентстве</span></a>
+                </li>
+                <li>
+                    <a href="reviews.html" class="no-underline"><span class="underlined">Отзывы</span></a>
+                </li>
+                <li>
+                    <a href="questions.html" class="no-underline"><span class="underlined">Вопрос-ответ</span></a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="navbar-phone">
+                    <div>8 800 555 7853</div>
+                    <p class="small pull-right">10:00&mdash;21:00</p>
+                </li>
+                <li class="navbar-login">
+                    <a href="auth.html" class="no-underline">
+                        <span class="glyphicon glyphicon-user"></span> <span class="underlined">Войти</span>
+                    </a>
+                </li>
+            </ul>
+        </div><!--navbar-collapse-->
+    </div>
+</div> <!--navbar-->
+
+<div id="page_hotel" class="page-white">
+<div class="container">
+
+    <!--block header-->
+    <!--endblock-->
+
+    <!--block content-->
+</div>
+<div class="bar-blue">
+<div class="container">
+<div class="flex-justify search-placeholder js-search-placeholder">
+    <a href="search-results.html" class="link-white no-underline">
+        <span class="icon-arrow-left"></span>
+        <span class="underlined">Назад к списку отелей</span>
+    </a>
+    <button type="button" class="btn btn-stroke js-new-search">Новый поиск</button>
+</div>
+<form class="form-flex form-search js-search-form js-search-form-collapsing off" role="form">
+<div class="city">
+    <div class="flex-justify">
+        <h4>Поиск туров из
+            <button type="button" class="btn btn-dashedlink onblue" data-toggle="modal" data-target="#modal-search-city">Санкт-Петербурга</button>
+        </h4>
+        <div class="close-wrap">
+            <button type="button" class="close js-close-search">
+                <span aria-hidden="true">&times;</span>
+                <span class="sr-only">Close</span>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="flex-row">
+<div class="inputs">
+<div class="line small">
+    <div class="section">
+        <div class="form-group to">Куда летим</div>
+        <div class="form-group when">Вылет</div>
+        <div class="form-group nights">Ночей</div>
+        <div class="form-group people">Взрослых и детей</div>
+    </div>
+</div>
+<div class="line">
+    <div class="section">
+        <div class="form-group to">
+            <label for="search-country" class="sr-only">Куда летим</label>
+            <select class="country-format js-search-country form-control" id="search-country">
+                <option></option>
+                <optgroup label="Популярные">
+                    <option value="40">Египет</option>
+                    <option value="119">Турция</option>
+                    <option value="35">Греция</option>
+                    <option value="39">Доминикана</option>
+                    <option value="58">Кипр</option>
+                    <option value="59">Китай</option>
+                </optgroup>
+                <optgroup label="Все">
+                    <option value="40">Египет</option>
+                    <option value="90">ОАЭ</option>
+                    <option value="75">Марокко</option>
+                    <option value="119">Турция</option>
+                    <option value="35">Греция</option>
+                    <option value="39">Доминикана</option>
+                    <option value="58">Кипр</option>
+                    <option value="59">Китай</option>
+                </optgroup>
+            </select>
+
+            <label class="sr-only" for="search-resort">Курорт</label>
+            <select class="multiselect js-search-resort" multiple="multiple" id="search-resort">
+                <option value="1" selected>Хургада</option>
+                <option value="2" selected>Шарм-эль-Шейх</option>
+                <option value="3" selected>Дахаб</option>
+                <option value="4" selected>Таба</option>
+                <option value="5" selected>Эль Гуна</option>
+                <option value="6" selected>Каир</option>
+                <option value="7" selected>Макади</option>
+                <option value="8" selected>Абу Даби</option>
+                <option value="11" selected>Агадир</option>
+            </select>
+        </div>
+        <div class="form-group when">
+            <label for="search-date" class="sr-only">Вылет</label>
+            <input type="hidden" id="search-starts" class="search-starts">
+            <input type="hidden" id="search-ends" class="search-ends">
+            <div class="input-group search-date-wrap search-date-wrap-main" data-date="" >
+                <input class="form-control" id="search-date" readonly="readonly" data-date-format="D MMM">
+                <span class="input-group-addon caret"></span>
+                <span class="input-group-addon period hidden search-date-period">&plusmn;3 дня</span>
+            </div>
+        </div>
+        <div class="form-group nights">
+            <label for="search-nights-from" class="sr-only">Ночей</label>
+            <div class="btn-group js-search-nights-toggle">
+                <button type="button" class="btn dropdown-toggle form-control js-nights-value" data-toggle="dropdown" id="nights">6 – 14</button>
+                <input id="search-nights-from" type="hidden" value="6" class="search-nights-from">
+                <input id="search-nights-to" type="hidden" value="14" class="search-nights-to">
+                <div class="dropdown-menu search-dropdown search-nights js-search-nights">
+                    <div class="dropdown-title"><span class="small">Выберите число или диапазон</span></div>
+                    <div class="dropdown-select dropdown-matrix">
+                        <div class="line">
+                            <div class="item" data-value="1">1</div>
+                            <div class="item" data-value="2">2</div>
+                            <div class="item" data-value="3">3</div>
+                            <div class="item" data-value="4">4</div>
+                            <div class="item" data-value="5">5</div>
+                            <div class="item" data-value="6">6</div>
+                            <div class="item" data-value="7">7</div>
+                        </div>
+                        <div class="line">
+                            <div class="item" data-value="8">8</div>
+                            <div class="item" data-value="9">9</div>
+                            <div class="item" data-value="10">10</div>
+                            <div class="item" data-value="11">11</div>
+                            <div class="item" data-value="12">12</div>
+                            <div class="item" data-value="13">13</div>
+                            <div class="item" data-value="14">14</div>
+                        </div>
+                        <div class="line">
+                            <div class="item" data-value="15">15</div>
+                            <div class="item" data-value="16">16</div>
+                            <div class="item" data-value="17">17</div>
+                            <div class="item" data-value="18">18</div>
+                            <div class="item" data-value="19">19</div>
+                            <div class="item" data-value="20">20</div>
+                            <div class="item" data-value="21">21</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group people">
+            <label class="sr-only">Взрослых и детей</label>
+            <div class="input-group js-search-people-toggle">
+                <div class="form-control dropdown-toggle" data-toggle="dropdown">
+                    <span class="js-search-adults-span">2 взрослых</span>
+                    <span class="input-group-addon js-search-children-span">Без детей</span>
+                </div>
+                <div class="dropdown-menu search-dropdown js-search-people">
+                    <div class="dropdown-select dropdown-selects">
+                        <div class="line">
+                            <div class="form-group adults">
+                                <label for="search-adults">Взрослых:</label>
+                                <div class="form-control dropdown-toggle js-search-adults-value" data-toggle="dropdown" id="search-adults">2</div>
+                                <div class="dropdown-menu dropdown-simpleselect">
+                                    <div class="item">1</div>
+                                    <div class="item active">2</div>
+                                    <div class="item">3</div>
+                                    <div class="item">4</div>
+                                </div>
+                            </div>
+                            <div class="form-group children">
+                                <label for="search-children">Детей:</label>
+                                <div class="form-control dropdown-toggle js-search-children-value" data-toggle="dropdown" id="search-children">0</div>
+                                <div class="dropdown-menu dropdown-simpleselect">
+                                    <div class="item active">0</div>
+                                    <div class="item">1</div>
+                                    <div class="item">2</div>
+                                    <div class="item">3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-select dropdown-selects children-ages off">
+                        <p>Возраст детей:</p>
+                        <div class="line">
+                            <div class="form-group children-age off">
+                                <label class="sr-only" for="search-children-age-0">Возраст первого ребёнка:</label>
+                                <div class="form-control dropdown-toggle js-search-children-age-value-0" data-toggle="dropdown" id="search-children-age-0">1</div>
+                                <div class="dropdown-menu dropdown-simpleselect">
+                                    <div class="item active">1</div>
+                                    <div class="item">2</div>
+                                    <div class="item">3</div>
+                                    <div class="item">4</div>
+                                    <div class="item">5</div>
+                                    <div class="item">6</div>
+                                    <div class="item">7</div>
+                                    <div class="item">8</div>
+                                    <div class="item">9</div>
+                                    <div class="item">10</div>
+                                    <div class="item">11</div>
+                                    <div class="item">12</div>
+                                    <div class="item">13</div>
+                                    <div class="item">14</div>
+                                </div>
+                            </div>
+                            <div class="form-group children-age off">
+                                <label class="sr-only" for="search-children-age-1">Возраст второго ребёнка:</label>
+                                <div class="form-control dropdown-toggle js-search-children-age-value-1" data-toggle="dropdown" id="search-children-age-1">1</div>
+                                <div class="dropdown-menu dropdown-simpleselect">
+                                    <div class="item active">1</div>
+                                    <div class="item">2</div>
+                                    <div class="item">3</div>
+                                    <div class="item">4</div>
+                                    <div class="item">5</div>
+                                    <div class="item">6</div>
+                                    <div class="item">7</div>
+                                    <div class="item">8</div>
+                                    <div class="item">9</div>
+                                    <div class="item">10</div>
+                                    <div class="item">11</div>
+                                    <div class="item">12</div>
+                                    <div class="item">13</div>
+                                    <div class="item">14</div>
+                                </div>
+                            </div>
+                            <div class="form-group children-age off">
+                                <label class="sr-only" for="search-children-age-2">Возраст третьего ребёнка:</label>
+                                <div class="form-control dropdown-toggle js-search-children-age-value-2" data-toggle="dropdown" id="search-children-age-2">1</div>
+                                <div class="dropdown-menu dropdown-simpleselect">
+                                    <div class="item active">1</div>
+                                    <div class="item">2</div>
+                                    <div class="item">3</div>
+                                    <div class="item">4</div>
+                                    <div class="item">5</div>
+                                    <div class="item">6</div>
+                                    <div class="item">7</div>
+                                    <div class="item">8</div>
+                                    <div class="item">9</div>
+                                    <div class="item">10</div>
+                                    <div class="item">11</div>
+                                    <div class="item">12</div>
+                                    <div class="item">13</div>
+                                    <div class="item">14</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="line medium">
+    <div class="section">
+        <div class="form-group hotel-class select-checkbox">
+            Класс отеля:
+            <button class="btn btn-dashedlink onblue dropdown-toggle" data-toggle="dropdown">
+                <span class="select-checkbox-text">все</span> <span class="icon-star"></span>
+            </button>
+            <div class="dropdown-menu search-dropdown js-search-class" role="tooltip">
+                <div class="arrow"></div>
+                <div class="dropdown-select dropdown-list checkbox-group">
+                    <div class="line">
+                        <label>
+                            <input type="checkbox" checked class="all hidden" data-value="все">
+                            <span>Все отели</span>
+                        </label>
+                    </div>
+                    <div class="line">
+                        <label>
+                            <input type="checkbox" class="regular hidden" data-value="2">
+                                                <span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                </span>
+                        </label>
+                    </div>
+                    <div class="line">
+                        <label>
+                            <input type="checkbox" class="regular hidden" data-value="3">
+                                                <span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                </span>
+                        </label>
+                    </div>
+                    <div class="line">
+                        <label>
+                            <input type="checkbox" class="regular hidden" data-value="4">
+                                                <span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                </span>
+                        </label>
+                    </div>
+                    <div class="line">
+                        <label>
+                            <input type="checkbox" class="regular hidden" data-value="5">
+                                                <span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group hotel-food select-checkbox extended hidden">
+            Питание:
+            <button class="btn btn-dashedlink onblue dropdown-toggle " data-toggle="dropdown">
+                <span class="select-checkbox-text">любое</span>
+            </button>
+            <div class="dropdown-menu search-dropdown js-search-class" role="tooltip">
+                <div class="arrow"></div>
+                <div class="dropdown-select dropdown-list checkbox-group">
+                    <div class="line">
+                        <label>
+                            <input type="checkbox" checked class="all hidden" data-value="любое">
+                            <span>Любое питание</span>
+                        </label>
+                    </div>
+                    <div class="line">
+                        <label>
+                            <input type="checkbox" class="regular hidden" data-value="AI">
+                            <span>AI (всё включено)</span>
+                        </label>
+                    </div>
+                    <div class="line">
+                        <label>
+                            <input type="checkbox" class="regular hidden" data-value="BB">
+                            <span>BB (только завтрак)</span>
+                        </label>
+                    </div>
+                    <div class="line">
+                        <label>
+                            <input type="checkbox" class="regular hidden" data-value="FB">
+                            <span>FB (завтрак, обед и ужин)</span>
+                        </label>
+                    </div>
+                    <div class="line">
+                        <label>
+                            <input type="checkbox" class="regular hidden" data-value="HB">
+                            <span>HB (завтрак и ужин)</span>
+                        </label>
+                    </div>
+                    <div class="line">
+                        <label>
+                            <input type="checkbox" class="regular hidden" data-value="RO">
+                            <span>RO (без питания)</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--div class="form-group hotel-beach select-checkbox extended hidden">
+            Пляжная линия:
+            <button class="btn btn-dashedlink onblue dropdown-toggle " data-toggle="dropdown">
+                <span class="select-checkbox-text">любая</span>
+            </button>
+            <div class="dropdown-menu search-dropdown js-search-class" role="tooltip">
+                <div class="arrow"></div>
+                <div class="dropdown-select dropdown-list checkbox-group">
+                    <div class="line">
+                        <label>
+                            <input type="checkbox" checked class="all hidden" data-value="любая">
+                            <span>Любая</span>
+                        </label>
+                    </div>
+                    <div class="line">
+                        <label>
+                            <input type="checkbox" class="regular hidden" data-value="первая">
+                            <span>Первая линия</span>
+                        </label>
+                    </div>
+                    <div class="line">
+                        <label>
+                            <input type="checkbox" class="regular hidden" data-value="вторая">
+                            <span>Вторая линия</span>
+                        </label>
+                    </div>
+                    <div class="line">
+                        <label>
+                            <input type="checkbox" class="regular hidden" data-value="третья">
+                            <span>Третья линия</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div-->
+        <div class="form-group hotel-name extended hidden">
+            Отель:
+            <label for="hotel-name" class="sr-only">Название отеля</label>
+            <input class="js-hotel-name select-hotel-name" id="hotel-name" type="text">
+        </div>
+    </div>
+</div>
+</div>
+<div class="search-button">
+    <div class="search-go-wrap text-center">
+        <button type="button" class="btn btn-medium btn-yellow">Найти туры</button>
+        <button type="button" class="btn btn-dashedlink onblue extend js-search-extend no-underline"><span
+                class="underlined">Расширенный поиск</span></button>
+    </div>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="container">
+<header class="split">
+    <h1>
+        Laguna Holiday Club Resort
+                <span class="stars-orange">
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                </span>
+    </h1>
+    <div  class="flex-justify">
+                <span class="nav">
+                    <a href="#tours" class="link-dashed smooth-scrolling">Туры</a>
+                    <a href="#reviews" class="link-dashed no-underline smooth-scrolling"><span class="underlined">Отзывы</span><span class="link-label"> (12)</span></a>
+                    <a href="#description" class="link-dashed smooth-scrolling">Описание</a>
+                    <a href="#services" class="link-dashed smooth-scrolling">Услуги</a>
+                </span>
+        <span>Таиланд, Паттайя</span>
+    </div>
+</header>
+
+<div class="ruler"></div>
+<div class="split hotel-intro">
+    <div class="row">
+        <div class="col-md-7">
+            <div class="fotorama" data-fit="contain" data-nav="false" data-ratio="1.5" data-width="100%">
+                <img src="ct/e1/photo-01.jpg">
+                <img src="ct/e1/photo-02.jpg">
+                <img src="ct/e1/photo-03.jpg">
+                <img src="ct/e1/photo-04.jpg">
+                <img src="ct/e1/photo-05.jpg">
+                <img src="ct/e1/photo-06.jpg">
+                <img src="ct/photo-07.jpg">
+                <img src="ct/photo-08.jpg">
+                <img src="ct/photo-09.jpg">
+                <img src="ct/photo-10.jpg">
+                <img src="ct/photo-11.jpg">
+                <img src="ct/photo-12.jpg">
+                <img src="ct/photo-13.jpg">
+                <img src="ct/photo-14.jpg">
+                <img src="ct/photo-15.jpg">
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="description description-recommended">
+                <h4>Рекомендованный отель</h4>
+                <div class="text-expert hidden">Хороший отель недалеко от пляжа. Чистый бассейн и уютные номера. Кормят немного, но довольно вкусно. Неглубокий детский бассейн. Отлично подойдёт для отдыха семьёй.</div>
+                <div class="text-empty hidden">
+                    К отелю пока нет описания
+                </div>
+                <div class="text-description">
+                    <div class="text-longread">
+                        <p>Отель Caravel расположен в четырех километрах от центра города Лимассол.</p>
+                        <p>В нескольких минутах ходьбы от гостиницы раскинулись два аквапарка с комплексом развлекательных аттракционов. Также рядом находятся зоосад и городской парк.</p>
+                        <p>В отеле Caravel девять десятков номеров, оборудованных балконами с видом на море. В каждом номере есть телефон, телевизор и кондиционер. Ванная комната оснащена душевой кабиной.</p>
+                        <p>Для комфорта постояльцев в Caravel предусмотрено круглосуточное обслуживание; есть лифт, комната для переговоров и массовых мероприятий, также предоставляются услуги прачечной. </p>
+                        <p>На территории гостиницы оборудованы площадки для спорта и отдыха, разбит сад. Не покидая пределов отеля, постояльцы принимают солнечные ванны, плавают в бассейнах, играют в бильярд и настольный теннис, посещают библиотеку и ночной клуб. На пляже предлагается заняться различными водными видами спорта. Для юных гостей есть детский бассейн, игровая комната и площадка под открытым небом. Ежедневно во дворе отеля звучит живая музыка.</p>
+                        <p>Основной ресторан Caravel обслуживает гостей по системе "все включено". Завтрак, обед и ужин – шведский стол. Легкие закуски, сэндвичи, а также кофе и чай постояльцы заказывают в баре у бассейна.</p>
+                        <!--Основной ресторан Caravel обслуживает гостей по системе "все включено". Завтрак, обед и ужин – шведский стол. Легкие закуски, сэндвичи, а также кофе и чай постояльцы заказывают в баре у бассейна.-->
+                        <br>
+                    </div>
+                    <a href="#" class="readall link-dashed" data-toggle="modal" data-target="#modal-hotel-description">Полное описание</a>
+                </div>
+            </div>
+            <div class="map-small">
+                <a href="#description" class="smooth-scrolling"></a>
+                <div class="map js-map" data-lat="13.7233894" data-lng="100.5385907" data-size="small"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ruler"></div>
+<div class="split hotel-tours">
+    <a name="tours"></a>
+    <div class="flex-justify">
+        <h2>
+            Туры в отель
+            <span class="text-warning hidden">
+                <span class="glyphicon glyphicon-exclamation-sign"></span>
+                Туры устарели, сделайте новый поиск
+            </span>
+        </h2>
+        <span class="small hidden">Окончательная цена на тур будет доступна после её уточнения у туроператора</span>
+    </div>
+    <div class="flex-table">
+        <div class="line line-search hidden">
+            <div class="progress progress-big">
+                <span class="progress-text">Идёт поиск...</span>
+                <div class="progress-bar progress-bar-yellow progress-bar-striped active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                </div>
+            </div>
+        </div>
+        <div class="line line-search hidden">
+        <div class="bar-blue">
+        <form class="form-flex form-search js-search-form" role="form">
+            <div class="flex-row">
+                <div class="city">
+                    <div class="flex-justify">
+                        <h4>
+                            Вылет из <button type="button" class="btn btn-dashedlink onblue" data-toggle="modal" data-target="#modal-search-city">Санкт-Петербурга</button>
+                        </h4>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="section">
+                        <div class="form-group when">
+                            <label for="search-date-small" class="">Вылет</label>
+                            <input type="hidden" id="search-starts-small" class="search-starts">
+                            <input type="hidden" id="search-ends-small" class="search-ends">
+                            <div class="input-group search-date-wrap search-date-wrap-small" data-date="" >
+                                <input class="form-control" id="search-date-small" readonly="readonly" data-date-format="D MMM">
+                                <span class="input-group-addon caret"></span>
+                                <span class="input-group-addon period hidden search-date-period">&plusmn;3 дня</span>
+                            </div>
+                        </div>
+                        <div class="form-group nights">
+                            <label for="search-nights-from-small" class="">Ночей</label>
+                            <div class="btn-group js-search-nights-toggle">
+                                <button type="button" class="btn dropdown-toggle form-control js-nights-value" data-toggle="dropdown" id="nights-small">6 – 14</button>
+                                <input id="search-nights-from-small" type="hidden" value="6" class="search-nights-from">
+                                <input id="search-nights-to-small" type="hidden" value="14" class="search-nights-to">
+                                <div class="dropdown-menu search-dropdown search-nights js-search-nights">
+                                    <div class="dropdown-title"><span class="small">Выберите число или диапазон</span></div>
+                                    <div class="dropdown-select dropdown-matrix">
+                                        <div class="line">
+                                            <div class="item" data-value="1">1</div>
+                                            <div class="item" data-value="2">2</div>
+                                            <div class="item" data-value="3">3</div>
+                                            <div class="item" data-value="4">4</div>
+                                            <div class="item" data-value="5">5</div>
+                                            <div class="item" data-value="6">6</div>
+                                            <div class="item" data-value="7">7</div>
+                                        </div>
+                                        <div class="line">
+                                            <div class="item" data-value="8">8</div>
+                                            <div class="item" data-value="9">9</div>
+                                            <div class="item" data-value="10">10</div>
+                                            <div class="item" data-value="11">11</div>
+                                            <div class="item" data-value="12">12</div>
+                                            <div class="item" data-value="13">13</div>
+                                            <div class="item" data-value="14">14</div>
+                                        </div>
+                                        <div class="line">
+                                            <div class="item" data-value="15">15</div>
+                                            <div class="item" data-value="16">16</div>
+                                            <div class="item" data-value="17">17</div>
+                                            <div class="item" data-value="18">18</div>
+                                            <div class="item" data-value="19">19</div>
+                                            <div class="item" data-value="20">20</div>
+                                            <div class="item" data-value="21">21</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group people">
+                            <label class="">Взрослых и детей</label>
+                            <div class="input-group js-search-people-toggle">
+                                <div class="form-control dropdown-toggle" data-toggle="dropdown">
+                                    <span class="js-search-adults-span">2 взрослых</span>
+                                    <span class="input-group-addon js-search-children-span">Без детей</span>
+                                </div>
+                                <div class="dropdown-menu search-dropdown js-search-people">
+                                    <div class="dropdown-select dropdown-selects">
+                                        <div class="line">
+                                            <div class="form-group adults">
+                                                <label for="search-adults-small">Взрослых:</label>
+                                                <div class="form-control dropdown-toggle js-search-adults-value" data-toggle="dropdown" id="search-adults-small">2</div>
+                                                <div class="dropdown-menu dropdown-simpleselect">
+                                                    <div class="item">1</div>
+                                                    <div class="item active">2</div>
+                                                    <div class="item">3</div>
+                                                    <div class="item">4</div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group children">
+                                                <label for="search-children-small">Детей:</label>
+                                                <div class="form-control dropdown-toggle js-search-children-value" data-toggle="dropdown" id="search-children-small">0</div>
+                                                <div class="dropdown-menu dropdown-simpleselect">
+                                                    <div class="item active">0</div>
+                                                    <div class="item">1</div>
+                                                    <div class="item">2</div>
+                                                    <div class="item">3</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-select dropdown-selects children-ages off">
+                                        <p>Возраст детей:</p>
+                                        <div class="line">
+                                            <div class="form-group children-age off">
+                                                <label class="sr-only" for="search-children-age-0-small">Возраст первого ребёнка:</label>
+                                                <div class="form-control dropdown-toggle js-search-children-age-value-0" data-toggle="dropdown" id="search-children-age-0-small">1</div>
+                                                <div class="dropdown-menu dropdown-simpleselect">
+                                                    <div class="item active">1</div>
+                                                    <div class="item">2</div>
+                                                    <div class="item">3</div>
+                                                    <div class="item">4</div>
+                                                    <div class="item">5</div>
+                                                    <div class="item">6</div>
+                                                    <div class="item">7</div>
+                                                    <div class="item">8</div>
+                                                    <div class="item">9</div>
+                                                    <div class="item">10</div>
+                                                    <div class="item">11</div>
+                                                    <div class="item">12</div>
+                                                    <div class="item">13</div>
+                                                    <div class="item">14</div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group children-age off">
+                                                <label class="sr-only" for="search-children-age-1-small">Возраст второго ребёнка:</label>
+                                                <div class="form-control dropdown-toggle js-search-children-age-value-1" data-toggle="dropdown" id="search-children-age-1-small">1</div>
+                                                <div class="dropdown-menu dropdown-simpleselect">
+                                                    <div class="item active">1</div>
+                                                    <div class="item">2</div>
+                                                    <div class="item">3</div>
+                                                    <div class="item">4</div>
+                                                    <div class="item">5</div>
+                                                    <div class="item">6</div>
+                                                    <div class="item">7</div>
+                                                    <div class="item">8</div>
+                                                    <div class="item">9</div>
+                                                    <div class="item">10</div>
+                                                    <div class="item">11</div>
+                                                    <div class="item">12</div>
+                                                    <div class="item">13</div>
+                                                    <div class="item">14</div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group children-age off">
+                                                <label class="sr-only" for="search-children-age-2-small">Возраст третьего ребёнка:</label>
+                                                <div class="form-control dropdown-toggle js-search-children-age-value-2" data-toggle="dropdown" id="search-children-age-2-small">1</div>
+                                                <div class="dropdown-menu dropdown-simpleselect">
+                                                    <div class="item active">1</div>
+                                                    <div class="item">2</div>
+                                                    <div class="item">3</div>
+                                                    <div class="item">4</div>
+                                                    <div class="item">5</div>
+                                                    <div class="item">6</div>
+                                                    <div class="item">7</div>
+                                                    <div class="item">8</div>
+                                                    <div class="item">9</div>
+                                                    <div class="item">10</div>
+                                                    <div class="item">11</div>
+                                                    <div class="item">12</div>
+                                                    <div class="item">13</div>
+                                                    <div class="item">14</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-button">
+                    <div class="search-go-wrap text-center">
+                        <button type="button" class="btn btn-medium btn-yellow">Найти туры</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        </div>
+        </div>
+    </div>
+    <div class="flex-table">
+        <div class="line empty">
+            <div>
+                <h4>Туров не найдено</h4>
+                <p>Попробуйте изменить дату вылета или количество ночей</p>
+                <button class="btn btn-yellow">Поиск туров в отель</button>
+                <a href="search-results.html" class="small">Другие отели Таиланда</a>
+            </div>
+        </div>
+    </div>
+    <div class="flex-table hidden">
+        <div class="line error">
+            <div class="block apartment">
+                <h4>Standart</h4>
+                <p class="small">2 взрослых 12+, 12+</p>
+            </div>
+            <div class="block date">
+                <p class="strong">10 авг</p>
+                <p class="small">вылет</p>
+            </div>
+            <div class="block nights">
+                <p class="strong">7</p>
+                <p class="small">ночей</p>
+            </div>
+            <div class="block food">
+                <p class="strong">AI</p>
+                <p class="small">всё включено</p>
+            </div>
+            <div class="block price">
+                <p class="strong">47 565 <span class="icon-ruble"></span></p>
+                <p class="small">ошибка обновления цены</p>
+            </div>
+            <div class="block buy">
+                <button class="btn btn-grayborder js-update-price">Обновить</button>
+            </div>
+        </div>
+        <div class="line ">
+            <div class="block apartment">
+                <h4>Standart</h4>
+                <p class="small">2 взрослых 12+, 12+</p>
+            </div>
+            <div class="block date">
+                <p class="strong">9 июн</p>
+                <p class="small">вылет</p>
+            </div>
+            <div class="block nights">
+                <p class="strong">12</p>
+                <p class="small">ночей</p>
+            </div>
+            <div class="block food">
+                <p class="strong">BB</p>
+                <p class="small">только завтрак</p>
+            </div>
+            <div class="block price">
+                <p class="strong">45 565 <span class="icon-ruble"></span></p>
+                <p class="small">цена снижена на 8439 <span class="icon-ruble"></span></p>
+            </div>
+            <div class="block buy">
+                <button class="btn btn-yellow">Купить</button>
+            </div>
+        </div>
+        <div class="line wait">
+            <div class="block apartment">
+                <h4>Standart</h4>
+                <p class="small">Группа A Т1: 36 / 20.05.1978 Т2: 36 / 20.05.1978 12+, 12+</p>
+            </div>
+            <div class="block date">
+                <p class="strong">9 июн</p>
+                <p class="small">вылет</p>
+            </div>
+            <div class="block nights">
+                <p class="strong">7</p>
+                <p class="small">ночей</p>
+            </div>
+            <div class="block food">
+                <p class="strong">BB</p>
+                <p class="small">завтрак, обед и ужин</p>
+            </div>
+            <div class="block price">
+                <p class="strong">45 565 <span class="icon-ruble"></span></p>
+                <p class="small off"></p>
+            </div>
+            <div class="block buy">
+                <button class="btn btn-grayborder btn-progress" disabled>Уточняем цену</button>
+            </div>
+        </div>
+        <div class="line sold">
+            <div class="block apartment">
+                <h4>Standart</h4>
+                <p class="small">2 взрослых 12+, 12+</p>
+            </div>
+            <div class="block date">
+                <p class="strong">10 авг</p>
+                <p class="small">вылет</p>
+            </div>
+            <div class="block nights">
+                <p class="strong">7</p>
+                <p class="small">ночей</p>
+            </div>
+            <div class="block food">
+                <p class="strong">AI</p>
+                <p class="small">всё включено</p>
+            </div>
+            <div class="block price">
+                <p class="strong">255 565 <span class="icon-ruble"></span></p>
+                <p class="small off"></p>
+            </div>
+            <div class="block buy">
+                <button class="btn btn-grayborder" disabled>Тур продан</button>
+            </div>
+        </div>
+        <div class="line wait">
+            <div class="block apartment">
+                <h4>Standart</h4>
+                <p class="small">Группа A Т1: 36 / 20.05.1978 Т2: 36 / 20.05.1978 12+, 12+</p>
+            </div>
+            <div class="block date">
+                <p class="strong">9 июн</p>
+                <p class="small">вылет</p>
+            </div>
+            <div class="block nights">
+                <p class="strong">7</p>
+                <p class="small">ночей</p>
+            </div>
+            <div class="block food">
+                <p class="strong">BB</p>
+                <p class="small">завтрак, обед и ужин</p>
+            </div>
+            <div class="block price">
+                <p class="strong">45 565 <span class="icon-ruble"></span></p>
+            </div>
+            <div class="block buy">
+                <button class="btn btn-grayborder btn-progress" disabled>Уточняем цену</button>
+            </div>
+        </div>
+        <div class="line white">
+            <div class="block text-center small load-more">
+                <a href="#" class="link-dashed no-underline">
+                    <span class="icon-arrow-down"></span>
+                    <span class="underlined">Загрузить ещё туры</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="split hotel-tours-footnotes">
+    <div class="flex">
+        <div class="block">
+            <h4>Надежно и безопасно</h4>
+            <p class="small">Мы работаем только с крупными и проверенными временем туроператорами.</p>
+        </div>
+        <div class="block">
+            <h4>Онлайн-бронирование</h4>
+            <p class="small">Договор составляется прямо на&nbsp;сайте, а готовые документы мы вышлем вам на электронную почту. <a href="#">Как купить?</a></p>
+        </div>
+        <div class="block">
+            <h4>Оплата</h4>
+            <p class="small">Все платежи проводятся через&nbsp;защищённые сервера «Промсвязьбанка».</p>
+            <p>
+                <span class="inline visa"></span>
+                <span class="inline mc"></span>
+                <span class="inline bar"></span>
+                <span class="inline bank"></span>
+            </p>
+        </div>
+    </div>
+</div>
+<a name="reviews"></a>
+<div class="split hotel-reviews">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="flex-justify">
+                <h2>Отзывы</h2>
+                        <span class="nav">
+                            <a href="#" class="js-review-group-link js-review-group-link-1 link-white link-dashed no-underline" data-group="1"><span class="underlined">«Хорошо»</span><span class="link-label"> (<span class="js-review-group-total">0</span>)</span></a>
+                            <a href="#" class="js-review-group-link js-review-group-link-2 link-white link-dashed no-underline" data-group="2"><span class="underlined">«Нормально»</span><span class="link-label"> (<span class="js-review-group-total">0</span>)</span></a>
+                            <a href="#" class="js-review-group-link js-review-group-link-3 link-white link-dashed no-underline" data-group="3"><span class="underlined">«Плохо»</span><span class="link-label"> (<span class="js-review-group-total">0</span>)</span></a>
+                        </span>
+            </div>
+            <div class="review-pages">
+                <div class="review-page js-review">
+                    <a href="#" class="arrow arrow-left js-review-prev">
+                        <span class="icon-arrow-left"></span>
+                    </a>
+                    <a href="#" class="arrow arrow-right js-review-next">
+                        <span class="icon-arrow-right"></span>
+                    </a>
+                    <div class="flex-justify">
+                                <span>
+                                    <span class="strong js-review-name"></span>
+                                    <span class="small js-review-date"></span>
+                                </span>
+                        <span><span class="js-review-number">-</span> из <span class="js-review-total">-</span></span>
+                    </div>
+                    <div class="text-longread js-review-text" data-toggle="modal" data-target="#modal-hotel-review">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="hotel-rating">
+                <p class="small">Рейтинг отеля:</p>
+                <div class="value rating-good">8.2</div>
+                <p class="small">Размещение — <strong>8.6</strong></p>
+                <p class="small">Питание — <strong>8.2</strong></p>
+                <p class="small">Сервис — <strong>7.6</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="split hotel-description">
+    <a name="description"></a>
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Описание</h3>
+            <div class="text-empty">
+                К отелю пока нет описания
+            </div>
+            <div class="text-description hidden">
+                <div class="text-longread">
+                    <p> Отель Caravel расположен в четырех километрах от центра города Лимассол.</p>
+                    <p>В нескольких минутах ходьбы от гостиницы раскинулись два аквапарка с комплексом развлекательных аттракционов. Также рядом находятся зоосад и городской парк.</p>
+                    <p> В отеле Caravel девять десятков номеров, оборудованных балконами с видом на море. В каждом номере есть телефон, телевизор и кондиционер. Ванная комната оснащена душевой кабиной.</p>
+                    <p> Для комфорта постояльцев в Caravel предусмотрено круглосуточное обслуживание; есть лифт, комната для переговоров и массовых мероприятий, также предоставляются услуги прачечной. </p>
+                    <p>На территории гостиницы оборудованы площадки для спорта и отдыха, разбит сад. Не покидая пределов отеля, постояльцы принимают солнечные ванны, плавают в бассейнах, играют в бильярд и настольный теннис, посещают библиотеку и ночной клуб. На пляже предлагается заняться различными водными видами спорта. Для юных гостей есть детский бассейн, игровая комната и площадка под открытым небом. Ежедневно во дворе отеля звучит живая музыка.</p>
+                    <p>Основной ресторан Caravel обслуживает гостей по системе "все включено". Завтрак, обед и ужин – шведский стол. Легкие закуски, сэндвичи, а также кофе и чай постояльцы заказывают в баре у бассейна.</p>
+                </div>
+                <a href="#" class="readall link-dashed" data-toggle="modal" data-target="#modal-hotel-description">Полное описание</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h3>Расположение</h3>
+            <div class="map js-map" data-lat="13.7233894" data-lng="100.5385907"></div>
+        </div>
+    </div>
+</div>
+<div class="ruler"></div>
+<div class="split hotel-services">
+    <a name="services"></a>
+    <h2>Услуги в отеле</h2>
+    <div class="columns columns-4">
+        <div class="columns-item">
+            <h4 class="network">Интернет</h4>
+            <ul>
+                <li>Wi-Fi</li>
+            </ul>
+        </div>
+        <div class="columns-item">
+            <h4 class="hotel">Общие услуги</h4>
+            <ul>
+                <li>Лифт</li>
+                <li>Сад</li>
+                <li>Банкетный зал</li>
+            </ul>
+        </div>
+        <div class="columns-item">
+            <h4 class="parking">Парковка</h4>
+            <ul>
+                <li>Частная</li>
+            </ul>
+        </div>
+        <div class="columns-item">
+            <h4 class="sport">Спорт</h4>
+            <ul>
+                <li>Настольный теннис</li>
+                <li>Рыбная ловля</li>
+                <li>Фитнес-центр</li>
+            </ul>
+        </div>
+        <div class="columns-item">
+            <h4 class="business">Бизнес-услуги</h4>
+            <ul>
+                <li>Конференц-зал</li>
+                <li>Бизнес-центр</li>
+            </ul>
+        </div>
+        <div class="columns-item">
+            <h4 class="comfort">Удобства в номерах</h4>
+            <ul>
+                <li>Кондиционер</li>
+                <li>Обслуживание в номерах</li>
+                <li>Сейф</li>
+                <li>Терраса</li>
+            </ul>
+        </div>
+        <div class="columns-item">
+            <h4 class="beauty">Здоровье и красота</h4>
+            <ul>
+                <li>Спа и оздоровительный центр</li>
+            </ul>
+        </div>
+        <div class="columns-item">
+            <h4 class="child">Услуги для детей</h4>
+            <ul>
+                <li>Игровая комната</li>
+                <li>Уход за детьми</li>
+            </ul>
+        </div>
+        <div class="columns-item">
+            <h4 class="food">Питание</h4>
+            <ul>
+                <li>Бар</li>
+                <li>Ресторан</li>
+            </ul>
+        </div>
+        <div class="columns-item">
+            <h4 class="transport">Транспорт</h4>
+            <ul>
+                <li>Трансфер</li>
+                <li>Аренда автомобиля</li>
+                <li>Продажа билетов</li>
+            </ul>
+        </div>
+        <div class="columns-item">
+            <h4 class="cleaning">Услуги по чистке одежды</h4>
+            <ul>
+                <li>Прачечная</li>
+            </ul>
+        </div>
+        <div class="columns-item">
+            <h4 class="key">Специальные номера</h4>
+            <ul>
+                <li>Для гостей с&nbsp;ограниченными физическими возможностями</li>
+            </ul>
+        </div>
+        <div class="columns-item">
+            <h4 class="entertainment">Развлечения</h4>
+            <ul>
+                <li>Экскурсии</li>
+                <li>Бильярд</li>
+            </ul>
+        </div>
+        <div class="columns-item">
+            <h4 class="water">Отдых на воде</h4>
+            <ul>
+                <li>Открытый бассейн</li>
+                <li>Крытый бассейн</li>
+            </ul>
+        </div>
+        <div class="columns-item">
+            <h4 class="beach">Тип пляжа</h4>
+            <ul>
+                <li>Песок жёлтый</li>
+            </ul>
+        </div>
+        <div class="columns-item">
+            <h4 class="hotel">Тип отеля</h4>
+            <ul>
+                <li>Одно здание</li>
+            </ul>
+        </div>
+        <div class="columns-item">
+            <h4 class="smoke">Курение</h4>
+            <ul>
+                <li>Комната для курения</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--endblock-->
+
+</div>
+</div> <!--page-->
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="footer-copyright">&copy; 2014 — Viasun.travel</div>
+                <div class="logo-cs text-hide">«Конструктивные Решения»</div>
+            </div>
+            <div class="col-md-6">
+                <ul class="footer-nav">
+                    <li><a href="#">Об агентстве</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Вопрос-ответ</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="footer-address">
+                    <p>634000, Россия, г. Новосибирск, ул. Романова, 39, оф. 305</p>
+                    <p>ООО «Виасан», ИНН 5406717327 ОГРН 1125476109758</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer-phone pull-right">8 800 333 4576</div>
+                <div class="pull-right">Бесплатный звонок по России</div>
+            </div>
+        </div>
+    </div>
+</footer> <!--footer-->
+
+<div class="modal fade modal-hotel-review" id="modal-hotel-review" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-fixed">
+        <a href="#" class="arrow arrow-left js-review-prev">
+            <span class="icon-arrow-left"></span>
+        </a>
+        <a href="#" class="arrow arrow-right js-review-next">
+            <span class="icon-arrow-right"></span>
+        </a>
+    </div>
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <header class="flex-justify">
+                    <h2>Отзывы</h2>
+                        <span class="nav">
+                            <a href="#" class="js-review-group-link js-review-group-link-1 link-dashed no-underline" data-group="1"><span class="underlined">«Хорошо»</span><span class="link-label"> (<span class="js-review-group-total">0</span>)</span></a>
+                            <a href="#" class="js-review-group-link js-review-group-link-2 link-dashed no-underline" data-group="2"><span class="underlined">«Нормально»</span><span class="link-label"> (<span class="js-review-group-total">0</span>)</span></a>
+                            <a href="#" class="js-review-group-link js-review-group-link-3 link-dashed no-underline" data-group="3"><span class="underlined">«Плохо»</span><span class="link-label"> (<span class="js-review-group-total">0</span>)</span></a>
+                        </span>
+                </header>
+                <div class="js-review">
+                    <div class="flex-justify">
+                                <span>
+                                    <span class="strong name js-review-name"></span>
+                                    <span class="small js-review-date"></span>
+                                </span>
+                        <span><span class="js-review-number">-</span> из <span class="js-review-total">-</span></span>
+                    </div>
+                    <div class="text-longread js-review-text">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-big btn-yellow js-loadmore" data-dismiss="modal">Вернуться</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-hotel-description" id="modal-hotel-description" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h2>Описание отеля</h2>
+                <div class="text-longread">
+                    <p> Отель Caravel расположен в четырех километрах от центра города Лимассол.</p>
+                    <p>В нескольких минутах ходьбы от гостиницы раскинулись два аквапарка с комплексом развлекательных аттракционов. Также рядом находятся зоосад и городской парк.</p>
+                    <p> В отеле Caravel девять десятков номеров, оборудованных балконами с видом на море. В каждом номере есть телефон, телевизор и кондиционер. Ванная комната оснащена душевой кабиной.</p>
+                    <p> Для комфорта постояльцев в Caravel предусмотрено круглосуточное обслуживание; есть лифт, комната для переговоров и массовых мероприятий, также предоставляются услуги прачечной. </p>
+                    <p>На территории гостиницы оборудованы площадки для спорта и отдыха, разбит сад. Не покидая пределов отеля, постояльцы принимают солнечные ванны, плавают в бассейнах, играют в бильярд и настольный теннис, посещают библиотеку и ночной клуб. На пляже предлагается заняться различными водными видами спорта. Для юных гостей есть детский бассейн, игровая комната и площадка под открытым небом. Ежедневно во дворе отеля звучит живая музыка.</p>
+                    <p>Основной ресторан Caravel обслуживает гостей по системе "все включено". Завтрак, обед и ужин – шведский стол. Легкие закуски, сэндвичи, а также кофе и чай постояльцы заказывают в баре у бассейна.</p>
+                </div>
+                <button type="button" class="btn btn-big btn-yellow" data-dismiss="modal">Вернуться</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="hidden">
+    <div class="js-review-group-1">
+        <div class="js-review-1">
+            <div class="js-review-name">Евгений</div>
+            <div class="js-review-date">20 мая</div>
+            <div class="js-review-text">
+                <p>Добрый день, дорогие путешественники! Если Вам нужен спокойный, комфортный отдых за небольшие деньги, то данный отель просто идеален для этого. Первое впечатление, как и от всей Паттаи в целом, было, мягко говоря, шокирующее. Далеко от центра, маленькие холл и крутая лестница, но проходит пару часов, и ты понимаешь, в каком интересном месте ты отдыхаешь, а удаленность от шумного центра становится неоспоримым преимуществом уже через пару дней нахождения в Тае. Сразу что производит приятное впечатление это бассейн. Многие скажут, что бывает и по круче, но такого уюта и чистой воды не во всех дорогих отелях встретишь. Лично для меня это было самое любимое место во всем отеле, там можно и поужинать и посидеть с корзиной фруктов, а так же насладиться теплой водой и чистым воздухом. Номер чистый, уютный достаточно просторный, уборка, смена полотенец и белья проводилась постоянно.</p>
+                <p>Отдельно хочется отметить персонал отеля. Молодые, активные, дружелюбные русскоговорящие работники за се время проживания не один раз приходили на помощь, а это в стране в которой ни говорят, ни на каком языке очень важно. Всегда подскажут, как и куда лучше пойти, помогут с переводом на русский язык и приготовят ЗАМЕЧАТЕЛЬНЫЙ кофе (и не только ;) ) в уютном баре.</p>
+                <p>С каждым прожитым днем в отеле я все больше и больше влюблялась в него. Он не похож на громадные помпезные гостиницы, которые заполнены разношерстной публикой и дорогой мебелью, он больше похож на уютный дом, где приезжаешь и забываешь о всех своих проблемах и заботах, где с улыбкой встретят тебя с экскурсии и разделят с тобой радостное впечатление.</p>
+                <p>Поэтому выбирайте для себя, что вам важней дорогие диваны и пальмы в холле или уют, тепло и радость от отдыха в отеле.</p>
+                <p>P.S. отдельно хочу отметить РЕСТОРАН ТАЙ ОРЕНДЖ!!! Там помимо уютных столиков, терраски, вкусной еды и НЕЗАБЫВАЕМЫХ коктейлей есть ооочень замечательный русский персонал, пообщавшись с которым ты понимаешь, что попал в ТАЙ и это несравненный отдых, который я запомню на всю жизнь!</p>
+            </div>
+        </div>
+        <div class="js-review-2">
+            <div class="js-review-name">Ирина</div>
+            <div class="js-review-date">18 января</div>
+            <div class="js-review-text">
+                <p>Мы ездили в конце августа, только поженились и поехали в отпуск. До этого отдыхали только в Турции и Египте.</p>
+                <p>Общее впечатление от отеля осталось не самое лучшее и вот почему.</p>
+                <p>Отель состоит из одного корпуса и небольшой территории. Когда мы зашли в корпус, было ощущение, что мы попали в советский санаторий, все очень тесное и простое, лифт не работает и за время отдыха его чинили почти каждый день, поэтому с чемоданами мы потащились по лестнице искать свой номер, никто не провожал нас в него. Номер был обычный, чистый, без особых излишеств: висели старые занавески с греческим орнаментом, кровать, шкафчик и тумбочка. Удивительно было, что в номере не было ТВ, холодильника - за все это надо было платить дополнительно (узнавали про холодильник - 8 евро в сутки). А в розетки нужны были переходники, т.к. они англ. - с 3 дырками, за переходник мы заплатили 2 евро. Кстати пульта от кондера тоже не было, за него надо заплатить депозит 20 евро, но при выезде нам вернули деньги, ну и сейф в номере также платный. Правда у нас украли русские рубли из него, мы положили их отдельно в кошелек, так как не нужны, а когда прилетели в Россию и нужно было расплачиваться в такси, обнаружили пропажу. Сейф мы всегда закрывали, только ключ от него есть еще и у менеджера отеля, который показывал как им пользоваться.</p>
+                <p>Корпус вроде ниче, нормальный, мы не сильно привередливые, но вот когда вышли во двор...расстроились. Да есть 2 бассейна. про которые написано в описание (для взрослых и для детей), но они в ужасно запущенном состоянии. Вода мутная как в луже (только зеленого цвета), плавают листья, а детский бассейн - это вообще кошмар - я бы даже там ноги не стала мыть. Видно, что давным давно их никто не чистил, хотя там каждый день что-то хлорировалось, но это просто ужасно. И территория вокруг них также в упадке. Не горели фонари, вечером чтобы выйти на улицу, подсвечивали себе путь телефонами, засохшие пальмы и кустарники, задний двор вообще заброшен и не подметается.</p>
+                <p>Столовая небольшая, шведский стол, мы брали путевку с завтраком и ужином, всегда наедались. Много мяса, иногда рыба и курица, не сильно большой выбор, но вкусно. За ужином все напитки платные, т.е. и вода и чай тоже ( 2,5 евро за чашку). Некоторые приносили свою воду, официанты ругались. Мы все время что-нибудь заказывали (то чай, то вино, то пиво) и официант нам один раз подарил 2 фреша (типо от заведения).</p>
+                <p>Почему написала, что для молодежи отель скучный, потому что вечером в нем вся жизнь замирает. После ужина на улице сидеть невозможно, так как темень (фонари не работают). "Бар" около бассейна - это одно название, там стоит пару столиков и барная стойка, но там никто не сидит, и вечером его тоже закрывают. остается только лобби-бар, там есть бесплатный wi-fi и ТВ, вот там можно посидеть, но музыка не играет и вообще тишина. Мы узнавали про ночной клуб, который должен быть где-то на крыше (это мы читали в отзывах, когда туда собирались), но ничего не было, и спрашивали у отдыхающих про него, тоже сказали искали, но похоже его закрыли. Поэтому нужно было искать развлечения где-то на улице.</p>
+                <p>Надо сказать, что Лимассол - это обычный город, не тусовочный, и развлечения вечером найти в нем сложно. Думали, что на пляже (как обычно в других странах) есть бары, дискотеки, рестораны, но и тут ошиблись. Вдоль берега есть заброшенные бары и они не работают. Видели дискотеку "Гуаба", но она открыта только по средам )))и какая-то сомнительная. Но нам повезло, мы попали в период винного фестиваля, вот там можно было расслабиться. Это территория парка, где проводится дегустация вин, играет музыка, поют песни и топчут виноград. Вот там было весело!</p>
+                <p>Про пляж скажу - тоже не впечатлил. Серый песок, смешанный с галькой и море соответственно не бирюзовое, как хотелось бы. Шезлонги и зонтики по 2 евро, поэтому в основном народ загорает на полотенцах (как у нас в Сочи), за пляжем тоже не сильно следят, он же муниципальный, и спасателей я не видела,только продавцов шезлонгов. Мы заходили на территорию соседнего отеля 5* "Посейдония" - все тоже самое, только у них лежаки бесплатные. До пляжа действительно надо идти через дорогу, около 200м, это не особо напрягает, можно прогуляться.</p>
+                <p>Вообще на Кипре очень заметен кризис! Видно, что раньше на побережье были и рестораны и бары и жизнь кипела, а сейчас все в упадке. Многие рестораны позакрывались. Мы зашли в один так пообедать, были единственными посетителями, хозяин, престарелый англичанин, был нам так рад, что даже кофе сделал бесплатно. И отели 5* тоже плохо выглядят, они хоть и стоят на 1-ой линии, но уже обшарпанные и запущенные.</p>
+                <p>Персонал в отеле приветливый, улыбчивые, но мало кто говорит по-русски.</p>
+                <p>Несмотря на все, нам понравился отпуск, мы брали разные экскурсии, ходили на винный фестиваль, познакомились с ребятами из нашего отеля и в компании время проводить было веселее. Решили, что если мы еще поедем на Кипр, то только в Айя-Напу, вот там веселье, куча баров и дискотек, и отдыхает молодежь, и пляж там с белоснежным песком и лазурным морем, но и цены конечно тоже выше.</p>
+                <p>И еще хочу посоветовать брать на прокат авто, нас если честно напугал гид, что очень часто бывают проблемы с возвратом депозита - владельцы придумывают ложные царапины и предъявляют счет, и мы отказались от этой идеи (там еще и правостороннее движение), но прокатиться по побережью острова было бы нам дешевле на авто, чем брать экскурсии.</p>
+            </div>
+        </div>
+        <div class="js-review-3">
+            <div class="js-review-name">Ольга</div>
+            <div class="js-review-date">8 декабря</div>
+            <div class="js-review-text">
+                <p>По прошествии некоторого времени могу сказать: отличное сочетание цены и качества.Да,завтраки однообразные.Но,ребята! Если вы хотите каждое утро и сосиски,и тост с джемом,и омлет,и бутер с ветчиной и сыром,и йогурт с помидором и маслицем,и кашу,и хлопья,то не жалуйтесь на однообразие,а подумайте о лишних кило,которые вам маячат после отдыха!Всегда можно разнообразно позавтракать из того,что подают. Убирают номера каждый день,чаевые давать не обязательно,но,если хотите отблагодарить...Да,персонал на ресепшене неважно говорит по-русски.Но вы же предполагали,что едете не в соседний город.Да,за пульт к кондеру 20 евро залог.Они вам по выезду вернутся.Ну,а что вы хотели!10 евро за сейф-и ваше спокойствие обеспечено! Изначально у нас был стандартный номер.Но,поговорив и объяснившись звуками-знаками,за 200 евро на троих мы взяли фемели рум.Было очень комфортно.И телевизор не был нужен! Доступ к бесплатному интернету был.Мы жили на 3-м этаже,поэтому,как было выше-не знаю. У нас были завтраки и ужины.как потом поняли,ужины можно было не брать.Потому что национальную кухню лучше пробовать в многочисленных кафешках! Если выйти из отеля и пойти направо,то рекомендуем Blue Island. Меню на русском языке.Обалденно вкусно! Бонус - какой -нибудь десерт!Вполне достойна цена! Гостеприимнейший хозяин!Походил к нам,интересовался, нравится ли нам у него.Приглашал посмотреть,как проходят местные семейные праздники,если ваш визит совпал,например, с крестинами! К сожалению,я не помню,как его зовут.А еще там работает замечательная девушка Жанна! Она реально очень много подскажет,расскажет и о местах,которые вы могли бы посетить на Кипре,и об общепринятых местных традициях. Еще можем порекомендовать таверну Assos. Меню по-русски.Обалденное мезе-ассорти! И рыбное, и мясное.Нам на троих было более чем достаточно! Вообще, частенько к обеду-ужину в кафе дают какую-нибудь вкусняшку бонусом! Все необходимое вы можете прикупить в многочисленных лавках.Если пойти из отеля налево,то есть магазинчик Sandiz. Вполне приемлемые цены и на необходимую повседневку,типа воды и зубной пасты,и на местное вино. И женщина-продавец,которая может понять ваш русско-английский. Мы экскурсии брали у отельного гида. Как-то не соориентировались сразу,а можно было взять в в турагенстве,которое расположено в нескольких десятков метров справа от отеля! Процентов на 30 дешевле! В общем,если вы приехали загорать,купаться,посетить замечательную прогулку на осликах,попробовать местное вино и знаменитую Зеванию,т.е. узнать страну,получить удовольствие от моря,самим найти развлечения,то Каравель-ваш вариант! Приятного отдыха!</p>
+            </div>
+        </div>
+        <div class="js-review-4">
+            <div class="js-review-name">Ирина</div>
+            <div class="js-review-date">14 октября</div>
+            <div class="js-review-text">
+                <p>Отдыхала с дочей 5-ти лет в этом отеле с 5 по 12 октября сего года. Для своей категории очень прилично.</p>
+                <p>Номер - скромно, но все что нужно есть. Поначалу огорчило отсутствие телевизора, но потом как-то улеглось))). Зато wi-fi бесплатно. Правда берет только до 3го этажа (а мы жили на 4м). Но ничего, в лобби можно посидеть если уж очень нужно).</p>
+                <p>Убирали очень хорошо, не жалко было оставлять чаевые. Гели-шампуни берите с собой. Там только мыло.</p>
+                <p>Еда - у нас были только завтраки. Как мне показалось очень неплохие для отеля этого уровня. Два вида хлопьев, каша, омлет, традициоонные сосиски и фасоль, нарезки сырно-колбасные, тзатзики и даже какое-то желе на десерт (пробовала-вкусно). Все свежее, всего хватает. Чай, кофе, соки из пачки. Кексы тоже были сладкие и не сладкие. Да, одно и тоже каждый день, но и отель то не 5*, чтобы разносолы по утрам ))).</p>
+                <p>Пляж - идти ровно 5 минут вразвалку в обход Посейдонии. Если через Посейдонию, то и того меньше. Пляж для Лимассола приличный. Вход в море хороший. Пляжная полоса длинная, можно выбрать, где упасть. Полотенца можно взять на рецепшн. 1 евро за полотенце. Каждая смена - 1 евро. Мы не меняли, просто сушили на балконе.</p>
+                <p>Персонал приветливый, доброжелательный.</p>
+                <p>В общем, отель приличный. Цена-качество. Главное адекватно воспринимать дейтвительность и понимать, что вы едете не в 5 звезд.</p>
+            </div>
+        </div>
+        <div class="js-review-5">
+            <div class="js-review-name">Mariposa</div>
+            <div class="js-review-date">16 октября</div>
+            <div class="js-review-text">
+                <p>Отель с первого взгляда понравился, заселили быстро, номер достался хороший, с баолконом с обалденным видом на горы и море! Территория отеля, конечно, небольшая, но довольно-таки милая. Очень красивый вид открывается, если сидите на террасе (вид на бассейн и прилегающую территорию и на отель Посейдония). Уютный лобби и бар. Всё чисто, аккуратно, мило.</p><p>Расположение отеля: отель находится практически на окраине Лимассола, но это не является недостатком) Ведь есть 30ый автобус, который за 1,5 евро доставит вас в ближайшие клубы:) А также на этом же автобусе можно доехать до старого города.</p><p>Еда: у меня были только завтраки. можно было заказаать ещё ужины, но что-то до этого дело не дошло)) Завтраки стандартные для "трёшки", тут уже в отзывах про них писали подробно. скажу, что очень сытно для меня было, часов до 16 есть не хотелось)) Конечно, каждый день было практически одно и то же, но зато всё свежее и вкусное.</p><p>Персонал: пожалуй, главный плюс отеля - это персонал! официанты, ресепшн, горничные, бармены - все нереально доброжелательные, улыбчивые, всегда готовы помочь! практически нет русскоговорящих, но если вы хоть немного знаете английский - весь ресепшн станет вашими друзьями)) София, Янис и Ахилес - очень классные,поддержат разговор на любую тему и всегда помогут:) Единственный, кто не впечатлил - это отельный гид от Пегаса) но а это уже претензии к туроператору, а не к отелю:)</p><p>Уборка номеров была отличная, нареканий нет.</p><p>Из минусов: сейчас в отеле отсутствует какая-либо анимация. так что если вечером хотите развлечений, то ищите их за стенами отеля;) А в лобби по вечерам любят собираться наши соотечественники и смотреть малахова или "ты не поверишь")) так что в баре можно посидеть нормально только тогда, когда они уйдут спать:) Также за кондиционер нужно платить депозит 20 евро. вам дают квитанцию и вы можете в любое время вернуть эти деньги, предъявив бумажку:)</p><p>В целом я очень довольна отелем! Рекомендую тем, кто не сидит целый день в номере или на территории и не ждёт, когда его будут развлекать танцами в стиле "арам-зам-зам";) Идеально для путешественников, которые приехали исследовать Лимассол и весь Кипр. Если это про вас, то выбирайте Caravel, не пожалеете!</p>
+            </div>
+        </div>
+    </div>
+    <div class="js-review-group-3">
+        <div class="js-review-1">
+            <div class="js-review-name">Надежда</div>
+            <div class="js-review-date">26 августа</div>
+            <div class="js-review-text">
+                <p>Были в этом отеле в начале августа, 10 дней.</p>
+                <p>Приехали в отель около 5 утра, но заселили согласились только ближе к 2м. В отеле отсутствует комната для хранения вещей, поэтому в ожидании заселения пришлось оставить сумки рядом с ресепшеном и оставаться рядом с ними,т.к. на ресепшене за вещами не следили (несмотря на все заверения, что приглядят).</p>
+                <p>Отель чистый, тихий, вдали от шумной дороги. С балкона видно и море, и часть города и горы,расположенная рядом стройка также абсолютно нам не мешала. Номера просторные, вся необходимая (для гостиничного номер) мебель имеется.</p>
+                <p>Сантехника достаточно новая, единственное неудобство - душ расположен перпендикулярно самой ванне, но к счастью - душ снимается. Есть даже коврик для ванной.</p>
+                <p>Сейф - 10 евро за все дни, кондиционер - 20 евро депозит.</p>
+                <p>Wi-fi есть в лобби, иногда не работал.</p>
+                <p>Питание: в первый день за завтрак пришлось заплатить по 4 евро на человека, в то утро нам повезло - был шведский стол. В остальные дни завтрак приносили каждому на тарелке. Что входит в завтрак: по 2 кусочска 2х видов колбасы, 2 кусочка сыра, несколько кусочков помидорки (не всегда зрелой), 2 кусочка бекона (иногда без бекона), 2 иногда 1 сосиска, иногда вареное яйцо, иногда типа омлета, упаковка масла и джема, несколько раз были круасаны (вкусные), на выбор - хлопья, чай, кофе, соки. Сока было два: один был черезчур разбавленный водой, другой наоборот - недоразбавленный, ощущался вкус порошка. Чай, кофе когда заканчивался в чайнике, просто разбавляли водой, отчего его вкус не улучшался. В неограниченных количествах только хлеб. Фруктов на завтрак за все 10 дней не было ни разу. Несколько раз проходили мимо и видели что подавалось на ужин, на ужине - шведский стол, из фруктов видели арбуз и сливы.</p>
+                <p>Скатерти на столах ужасно грязные, салфеток постоянно не хватало, соль и перец находились всего на нескольких столах, бокалы для напитков - грязные, даже после того как их помыли.</p>
+                <p>Персонал: на ресепшене по русски не говорят, некоторые и по-английски не говорят. Впрочем мы практически не обращались на ресепшен, поэтому про них ничего сказать не могу. Уборка ежедневно, кроме воскресенья. В целом убирались хорошо.</p>
+                <p>Бассейном при отеле не пользовались. Пляж через дорогу, 5-7 минут и вы на месте, и можете идти в любую сторону, где-то есть камни, где-то песок, где-то мелкая галька. все зависит от того как далеко вы пойдете. Пляж чистый.</p>
+                <p>В целом отель нас вполне устроил, твердая тройка. Кстати, дискотек на крыше не встречали, но в самом отеле устраивали и танцы вечером и арабскую и кипрскую ночи (по выходным), но мы их не посещали. Отель подойдет тем, кто приехал не для того, чтобы целыми днями сидеть внутри, а гулять.</p>
+                <p>Рядом с отелем полно различных ресторанов, где можно поесть. На двоих у нас получалось в районе 30 евро (с напитками).</p><p>Хочется порекомендовать такие места, как: из отеля налево - Georges (большие вкусные порции, но к сожалению не очень разнообразное меню) и ресторан китайской кухни; из отеля - направо 20-30 минут на 30-ом автобусе (проезд 1,5 евро) или 2 часа пешком - ресторан Lido (вкусно, прекрасная обстановка и настоящий кипрский кофе за 1,50 евро).</p>
+                <p>Из магазинов: из отеля направо - SoEasy и MMS.</p>
+            </div>
+        </div>
+        <div class="js-review-2">
+            <div class="js-review-name">Андрей</div>
+            <div class="js-review-date">10 декабря</div>
+            <div class="js-review-text">
+                <p>Ресепшн отзывчивый, быстро реагирует и готов помочь, даже если уровень английского (как например, моих соседей) оставляет желать лучшего. Нас переселили в другой номер, потому что в ванной протекла какая-то неведомая (потому что невидимая) труба.</p>
+                <p>До пляжа идти - 3 минуты, а добежать можно за 30 секунд! Нешумно, хотя на крыше дискотэка с красными огнями и пош-девицами на маздах и дукатти.</p>
+                <p>Завтраки у нас были, они пресные, повторяющиеся и неработающая кофе-машина.</p>
+                <p>Но персанал, повторюсь, отзывчивый - нам потребовалась открывашка для вина - и вуаля!</p>
+                <p>Тетя из Пегаса впихивает туры за 65 евро - типа гранд-тур, а за соседним углом они дешевле раза в два.</p>
+                <p>А на море там прекрасно, конечно, советую кафешку PASALIMANI, это как шатер, там вкусно и очень недорого. Кипр прекрасен, больше гуляйте и не орите на своего любимого человека на пляже ночью)))))))) удачи))))</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-search-city" id="modal-search-city" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul>
+                            <span class="letter">А</span>
+                            <li><a href="#" class="link-dashed">Абакан</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Архангельск</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                        </ul>
+                        <ul>
+                            <span class="letter">А</span>
+                            <li><a href="#" class="link-dashed">Абакан</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Архангельск</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                        </ul>
+                        <ul>
+                            <span class="letter">А</span>
+                            <li><a href="#" class="link-dashed">Абакан</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Архангельск</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            <span class="letter">А</span>
+                            <li><a href="#" class="link-dashed">Абакан</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Архангельск</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                        </ul>
+                        <ul>
+                            <span class="letter">А</span>
+                            <li><a href="#" class="link-dashed">Абакан</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Архангельск</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                        </ul>
+                        <ul>
+                            <span class="letter">А</span>
+                            <li><a href="#" class="link-dashed">Абакан</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Архангельск</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            <span class="letter">К</span>
+                            <li><a href="#" class="link-dashed current">Комсомольск-на-Амуре</a></li>
+                            <li><a href="#" class="link-dashed">Архангельск</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                        </ul>
+                        <ul>
+                            <span class="letter">А</span>
+                            <li><a href="#" class="link-dashed">Абакан</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                        </ul>
+                        <ul>
+                            <span class="letter">А</span>
+                            <li><a href="#" class="link-dashed">Абакан</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Архангельск</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            <span class="letter">А</span>
+                            <li><a href="#" class="link-dashed">Абакан</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Архангельск</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                        </ul>
+                        <ul>
+                            <span class="letter">А</span>
+                            <li><a href="#" class="link-dashed">Абакан</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Архангельск</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                        </ul>
+                        <ul>
+                            <span class="letter">А</span>
+                            <li><a href="#" class="link-dashed">Абакан</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Архангельск</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgiBBFKJzo-XqIIkwSHwXsoo9EeZ158JY"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.min.js"></script>
+<script src="js/hotel.js"></script>
+<script src="js/jquery.inputmask.bundle.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/bootstrap-multiselect.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/moment.ru.js"></script>
+<script src="js/bootstrap-datetimepicker.js"></script>
+<script src="js/main.js"></script>
+<script src="js/search-form.js"></script>
+</body>
+
+</html>

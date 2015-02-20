@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Viasun.travel — Страница не найдена</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<div class="navbar navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <div class="logo text-hide">Viasun.travel</div>
+                <p class="small">онлайн-турагентство</p>
+            </a>
+        </div>
+        <!--navbar-header-->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="about.html"><span class="link-underlined">Об агентстве</span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="link-underlined">Отзывы</span></a>
+                </li>
+                <li>
+                    <a class="№"><span class="link-underlined">Вопрос-ответ</span></a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="navbar-phone">
+                    <div>8 800 555 7853</div>
+                    <p class="small pull-right">10:00&mdash;21:00</p>
+                </li>
+                <li class="navbar-login">
+                    <a href="#" class="">
+                        <span class="glyphicon glyphicon-user"></span> <span class="link-underlined">Войти</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--navbar-collapse-->
+    </div>
+</div>
+<!--navbar-->
+
+
+<div id="page_" class="page-white">
+    <!--block header-->
+    <header class="split">
+        <div class="container">
+            <!--block title-->
+            <h1>Страница не найдена</h1>
+            <!--endblock-->
+        </div>
+    </header>
+    <div class="ruler"></div>
+    <!--endblock-->
+
+    <div class="container">
+        <div class="split split-filler">
+            <div class="row">
+                <div class="col-md-12">
+                    <form class="search-filters">
+                        <div class="panel filters-money">
+                            <a data-toggle="collapse" href="#filters-money">
+                                <div class="panel-heading">
+                                    <span class="caret pull-right"></span>
+                                    <h4 class="panel-title">Бюджет</h4>
+                                </div>
+                            </a>
+
+                            <div id="filters-money" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <input type="text" value="0"><span class="split">–</span><input type="text" class="active" value="220 000"><span
+                                        class="split icon-ruble"></span>
+                                    <input type="text" class="slider-money" value="" data-slider-min="0" data-slider-max="100000">
+                                </div>
+                            </div>
+                        </div>
+                        <!--panel-->
+                        <div class="panel filters-only">
+                            <a data-toggle="collapse" href="#filters-only">
+                                <div class="panel-heading">
+                                    <span class="caret pull-right"></span>
+                                    <h4 class="panel-title">Отображать только</h4>
+                                </div>
+                            </a>
+
+                            <div id="filters-only" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <p><input type="checkbox" id="filters-reviews" class="hidden"><label for="filters-reviews"> с отзывами</label></p>
+
+                                    <p><input type="checkbox" id="filters-recommend" class="checkbox-orange hidden"><label for="filters-recommend"> рекомендованные</label></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--panel-->
+                        <div class="panel filters-only">
+                            <a data-toggle="collapse" href="#filters-food" class="collapsed">
+                                <div class="panel-heading">
+                                    <span class="caret pull-right"></span>
+                                    <h4 class="panel-title">Питание</h4>
+                                </div>
+                            </a>
+
+                            <div id="filters-food" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                        <input type="checkbox" id="filters-ai" class="hidden">
+                                        <label for="filters-ai"> AI (всё включено)</label>
+                                    </p>
+
+                                    <p>
+                                        <input type="checkbox" id="filters-bb" class="hidden">
+                                        <label for="filters-bb"> BB (только завтрак)</label>
+                                    </p>
+
+                                    <p>
+                                        <input type="checkbox" id="filters-fb" class="hidden">
+                                        <label for="filters-fb"> FB (завтрак, обед и ужин)</label>
+                                    </p>
+
+                                    <p>
+                                        <input type="checkbox" id="filters-hb" class="hidden">
+                                        <label for="filters-hb"> HB (завтрак и ужин)</label>
+                                    </p>
+
+                                    <p>
+                                        <input type="checkbox" id="filters-ro" class="hidden">
+                                        <label for="filters-ro"> RO (без питания)</label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--panel-->
+                        <div class="panel filters-class">
+                            <a data-toggle="collapse" href="#filters-class" class="collapsed">
+                                <div class="panel-heading">
+                                    <span class="caret pull-right"></span>
+                                    <h4 class="panel-title">Класс отеля</h4>
+                                </div>
+                            </a>
+
+                            <div id="filters-class" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                        <input type="checkbox" id="filters-allstars" class="hidden">
+                                        <label for="filters-allstars">
+                                            любой
+                                        </label>
+                                    </p>
+
+                                    <p>
+                                        <input type="checkbox" id="filters-2stars" class="hidden">
+                                        <label for="filters-2stars">
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                        </label>
+                                    </p>
+
+                                    <p>
+                                        <input type="checkbox" id="filters-3stars" class="hidden">
+                                        <label for="filters-3stars">
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                        </label>
+                                    </p>
+
+                                    <p>
+                                        <input type="checkbox" id="filters-4stars" class="hidden">
+                                        <label for="filters-4stars">
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                        </label>
+                                    </p>
+
+                                    <p>
+                                        <input type="checkbox" id="filters-5stars" class="hidden">
+                                        <label for="filters-5stars">
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                            <span class="icon-star"></span>
+                                        </label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--panel-->
+                        <div class="panel filters-rating">
+                            <a data-toggle="collapse" href="#filters-rating">
+                                <div class="panel-heading">
+                                    <span class="caret pull-right"></span>
+                                    <h4 class="panel-title">Рейтинг</h4>
+                                </div>
+                            </a>
+
+                            <div id="filters-rating" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <span class="split">от</span><input type="text" class="active" value="1.0">
+                                    <input type="text" class="slider-rating">
+                                </div>
+                            </div>
+                        </div>
+                        <!--panel-->
+                        <div class="panel filters-hotel hidden">
+                            <a data-toggle="collapse" href="#filters-hotel">
+                                <div class="panel-heading">
+                                    <span class="caret pull-right"></span>
+                                    <h4 class="panel-title">Название отеля</h4>
+                                </div>
+                            </a>
+
+                            <div id="filters-hotel" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <input type="text" class="input-search" placeholder="первые 3 буквы">
+                                </div>
+                            </div>
+                        </div>
+                        <!--panel-->
+
+                        <button type="button" class="btn btn-reset pull-right js-filters-reset">
+                            <span class="glyphicon glyphicon-remove"></span> Сбросить
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--block content--><!--endblock-->
+    <div class="ruler"></div>
+
+</div>
+<!--white-page-->
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="footer-copyright">&copy; 2014 — Viasun.travel</div>
+                <div class="logo-cs text-hide">«Конструктивные Решения»</div>
+            </div>
+            <div class="col-md-6">
+                <ul class="footer-nav">
+                    <li><a href="#">Об агентстве</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Вопрос-ответ</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="footer-address">
+                    <p>634000, Россия, г. Новосибирск, ул. Романова, 39, оф. 305</p>
+
+                    <p>ООО «Виасан», ИНН 5406717327 ОГРН 1125476109758</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer-phone pull-right">8 800 333 4576</div>
+                <div class="pull-right">Бесплатный звонок по России</div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
+<script src="js/bootstrap.js"></script>
+<script>
+    $(function () {
+        $('#filters-class').on('shown.bs.collapse', function(){
+            alert('hi');
+        });
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Viasun.travel — Страна</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/select2-bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<div class="navbar navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <div class="logo text-hide">Viasun.travel</div>
+                <p class="small">онлайн-турагентство</p>
+            </a>
+        </div>
+        <!--navbar-header-->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="about.html" class="no-underline"><span class="underlined">Об агентстве</span></a>
+                </li>
+                <li>
+                    <a href="reviews.html" class="no-underline"><span class="underlined">Отзывы</span></a>
+                </li>
+                <li>
+                    <a href="questions.html" class="no-underline"><span class="underlined">Вопрос-ответ</span></a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="navbar-phone text-right">
+                    <div class="phone">8 800 333 8390</div>
+                    <span class="small">10:00&mdash;21:00</span>
+                </li>
+                <li class="navbar-login">
+                    <a href="#" class="no-underline" data-toggle="modal" data-target="#modal-login">
+                        <span class="glyphicon glyphicon-user"></span> <span class="underlined">Войти</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--navbar-collapse-->
+    </div>
+</div>
+<!--navbar-->
+
+<div id="page_country" class="">
+<div class="container">
+
+    <!--block header-->
+    <!--endblock-->
+
+    <!--block content-->
+</div>
+<div class="search search-intro" style="background-image: url('ct/cover-39.jpg');">
+    <div class="container">
+        <h1>Подберите ваш тур в Доминикану <span class="flag-big flag-big-39"></span></h1>
+        <h5>Бронирование тура не выходя из дома</h5>
+        <div class="search-form-wrap">
+        <form class="form-flex form-search js-search-form off" role="form">
+        <div class="city">
+            <div class="flex-justify">
+                <h4>Поиск туров из
+                    <button type="button" class="btn btn-dashedlink onblue" data-toggle="modal" data-target="#modal-search-city">Санкт-Петербурга</button>
+                </h4>
+                <div class="close-wrap hidden">
+                    <button type="button" class="close js-close-search">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="flex-row">
+        <div class="inputs">
+        <div class="line small">
+            <div class="section">
+                <div class="form-group to">Куда летим</div>
+                <div class="form-group when">Вылет</div>
+                <div class="form-group nights">Ночей</div>
+                <div class="form-group people">Взрослых и детей</div>
+            </div>
+        </div>
+        <div class="line">
+            <div class="section">
+                <div class="form-group to">
+                    <label for="search-country" class="sr-only">Куда летим</label>
+                    <select class="country-format js-search-country form-control" id="search-country">
+                        <optgroup label="Популярные">
+                            <option value="40">Египет</option>
+                            <option value="119">Турция</option>
+                            <option value="35">Греция</option>
+                            <option value="39">Доминикана</option>
+                            <option value="58">Кипр</option>
+                            <option value="59">Китай</option>
+                        </optgroup>
+                        <optgroup label="Все">
+                            <option value="40">Египет</option>
+                            <option value="119">Турция</option>
+                            <option value="35">Греция</option>
+                            <option value="39">Доминикана</option>
+                            <option value="58">Кипр</option>
+                            <option value="59">Китай</option>
+                        </optgroup>
+                    </select>
+
+                    <label class="sr-only" for="search-resort">Курорт</label>
+                    <select class="multiselect js-search-resort" multiple="multiple" id="search-resort">
+                        <option value="1" selected>Хургада</option>
+                        <option value="2" selected>Шарм-эль-Шейх</option>
+                        <option value="3" selected>Дахаб</option>
+                        <option value="4" selected>Таба</option>
+                        <option value="5" selected>Эль Гуна</option>
+                        <option value="6" selected>Каир</option>
+                        <option value="7" selected>Макади</option>
+                    </select>
+                </div>
+                <div class="form-group when">
+                    <label for="search-date" class="sr-only">Вылет</label>
+                    <input type="hidden" id="search-starts">
+                    <input type="hidden" id="search-ends">
+                    <div class="input-group search-date-wrap" data-date="" >
+                        <input class="form-control" id="search-date" readonly="readonly" data-date-format="D MMM">
+                        <span class="input-group-addon caret"></span>
+                        <span class="input-group-addon period hidden" id="search-date-period">&plusmn;3 дня</span>
+                    </div>
+                </div>
+                <div class="form-group nights">
+                    <label for="search-nights-from" class="sr-only">Ночей</label>
+                    <div class="btn-group js-search-nights-toggle">
+                        <button type="button" class="btn dropdown-toggle form-control" data-toggle="dropdown" id="nights">6 – 14</button>
+                        <input id="search-nights-from" type="hidden" value="6">
+                        <input id="search-nights-to" type="hidden" value="14">
+                        <div class="dropdown-menu search-dropdown search-nights js-search-nights">
+                            <div class="dropdown-title"><span class="small">Выберите число или диапазон</span></div>
+                            <div class="dropdown-select dropdown-matrix">
+                                <div class="line">
+                                    <div class="item" data-value="1">1</div>
+                                    <div class="item" data-value="2">2</div>
+                                    <div class="item" data-value="3">3</div>
+                                    <div class="item" data-value="4">4</div>
+                                    <div class="item" data-value="5">5</div>
+                                    <div class="item" data-value="6">6</div>
+                                    <div class="item" data-value="7">7</div>
+                                </div>
+                                <div class="line">
+                                    <div class="item" data-value="8">8</div>
+                                    <div class="item" data-value="9">9</div>
+                                    <div class="item" data-value="10">10</div>
+                                    <div class="item" data-value="11">11</div>
+                                    <div class="item" data-value="12">12</div>
+                                    <div class="item" data-value="13">13</div>
+                                    <div class="item" data-value="14">14</div>
+                                </div>
+                                <div class="line">
+                                    <div class="item" data-value="15">15</div>
+                                    <div class="item" data-value="16">16</div>
+                                    <div class="item" data-value="17">17</div>
+                                    <div class="item" data-value="18">18</div>
+                                    <div class="item" data-value="19">19</div>
+                                    <div class="item" data-value="20">20</div>
+                                    <div class="item" data-value="21">21</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group people">
+                    <label class="sr-only">Взрослых и детей</label>
+                    <div class="input-group js-search-people-toggle">
+                        <div class="form-control dropdown-toggle" data-toggle="dropdown">
+                            <span class="js-search-adults-span">2 взрослых</span>
+                            <span class="input-group-addon js-search-children-span">Без детей</span>
+                        </div>
+                        <div class="dropdown-menu search-dropdown js-search-people">
+                            <div class="dropdown-select dropdown-selects">
+                                <div class="line">
+                                    <div class="form-group adults">
+                                        <label for="search-adults">Взрослых:</label>
+                                        <div class="form-control dropdown-toggle js-search-adults-value" data-toggle="dropdown" id="search-adults">2</div>
+                                        <div class="dropdown-menu dropdown-simpleselect">
+                                            <div class="item">1</div>
+                                            <div class="item active">2</div>
+                                            <div class="item">3</div>
+                                            <div class="item">4</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group children">
+                                        <label for="search-children">Детей:</label>
+                                        <div class="form-control dropdown-toggle js-search-children-value" data-toggle="dropdown" id="search-children">0</div>
+                                        <div class="dropdown-menu dropdown-simpleselect">
+                                            <div class="item active">0</div>
+                                            <div class="item">1</div>
+                                            <div class="item">2</div>
+                                            <div class="item">3</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-select dropdown-selects children-ages off">
+                                <p>Возраст детей:</p>
+                                <div class="line">
+                                    <div class="form-group children-age off">
+                                        <label class="sr-only" for="search-children-age-0">Возраст первого ребёнка:</label>
+                                        <div class="form-control dropdown-toggle js-search-children-age-value-0" data-toggle="dropdown" id="search-children-age-0">1</div>
+                                        <div class="dropdown-menu dropdown-simpleselect">
+                                            <div class="item active">1</div>
+                                            <div class="item">2</div>
+                                            <div class="item">3</div>
+                                            <div class="item">4</div>
+                                            <div class="item">5</div>
+                                            <div class="item">6</div>
+                                            <div class="item">7</div>
+                                            <div class="item">8</div>
+                                            <div class="item">9</div>
+                                            <div class="item">10</div>
+                                            <div class="item">11</div>
+                                            <div class="item">12</div>
+                                            <div class="item">13</div>
+                                            <div class="item">14</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group children-age off">
+                                        <label class="sr-only" for="search-children-age-1">Возраст второго ребёнка:</label>
+                                        <div class="form-control dropdown-toggle js-search-children-age-value-1" data-toggle="dropdown" id="search-children-age-1">1</div>
+                                        <div class="dropdown-menu dropdown-simpleselect">
+                                            <div class="item active">1</div>
+                                            <div class="item">2</div>
+                                            <div class="item">3</div>
+                                            <div class="item">4</div>
+                                            <div class="item">5</div>
+                                            <div class="item">6</div>
+                                            <div class="item">7</div>
+                                            <div class="item">8</div>
+                                            <div class="item">9</div>
+                                            <div class="item">10</div>
+                                            <div class="item">11</div>
+                                            <div class="item">12</div>
+                                            <div class="item">13</div>
+                                            <div class="item">14</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group children-age off">
+                                        <label class="sr-only" for="search-children-age-2">Возраст третьего ребёнка:</label>
+                                        <div class="form-control dropdown-toggle js-search-children-age-value-2" data-toggle="dropdown" id="search-children-age-2">1</div>
+                                        <div class="dropdown-menu dropdown-simpleselect">
+                                            <div class="item active">1</div>
+                                            <div class="item">2</div>
+                                            <div class="item">3</div>
+                                            <div class="item">4</div>
+                                            <div class="item">5</div>
+                                            <div class="item">6</div>
+                                            <div class="item">7</div>
+                                            <div class="item">8</div>
+                                            <div class="item">9</div>
+                                            <div class="item">10</div>
+                                            <div class="item">11</div>
+                                            <div class="item">12</div>
+                                            <div class="item">13</div>
+                                            <div class="item">14</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divne medium">
+            <div class="section">
+                <div class="form-group hotel-class select-checkbox">
+                    Класс отеля:
+                    <button class="btn btn-dashedlink onblue dropdown-toggle" data-toggle="dropdown">
+                        <span class="select-checkbox-text">все</span> <span class="icon-star"></span>
+                    </button>
+                    <div class="dropdown-menu search-dropdown js-search-class" role="tooltip">
+                        <div class="arrow"></div>
+                        <div class="dropdown-select dropdown-list checkbox-group">
+                            <div class="line">
+                                <label>
+                                    <input type="checkbox" checked class="all hidden" data-value="все">
+                                    <span>Все отели</span>
+                                </label>
+                            </div>
+                            <div class="line">
+                                <label>
+                                    <input type="checkbox" class="regular hidden" data-value="2">
+                                                <span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                </span>
+                                </label>
+                            </div>
+                            <div class="line">
+                                <label>
+                                    <input type="checkbox" class="regular hidden" data-value="3">
+                                                <span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                </span>
+                                </label>
+                            </div>
+                            <div class="line">
+                                <label>
+                                    <input type="checkbox" class="regular hidden" data-value="4">
+                                                <span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                </span>
+                                </label>
+                            </div>
+                            <div class="line">
+                                <label>
+                                    <input type="checkbox" class="regular hidden" data-value="5">
+                                                <span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group hotel-food select-checkbox extended hidden">
+                    Питание:
+                    <button class="btn btn-dashedlink onblue dropdown-toggle " data-toggle="dropdown">
+                        <span class="select-checkbox-text">любое</span>
+                    </button>
+                    <div class="dropdown-menu search-dropdown js-search-class" role="tooltip">
+                        <div class="arrow"></div>
+                        <div class="dropdown-select dropdown-list checkbox-group">
+                            <div class="line">
+                                <label>
+                                    <input type="checkbox" checked class="all hidden" data-value="любое">
+                                    <span>Любое питание</span>
+                                </label>
+                            </div>
+                            <div class="line">
+                                <label>
+                                    <input type="checkbox" class="regular hidden" data-value="AI">
+                                    <span>AI (всё включено)</span>
+                                </label>
+                            </div>
+                            <div class="line">
+                                <label>
+                                    <input type="checkbox" class="regular hidden" data-value="BB">
+                                    <span>BB (только завтрак)</span>
+                                </label>
+                            </div>
+                            <div class="line">
+                                <label>
+                                    <input type="checkbox" class="regular hidden" data-value="FB">
+                                    <span>FB (завтрак, обед и ужин)</span>
+                                </label>
+                            </div>
+                            <div class="line">
+                                <label>
+                                    <input type="checkbox" class="regular hidden" data-value="HB">
+                                    <span>HB (завтрак и ужин)</span>
+                                </label>
+                            </div>
+                            <div class="line">
+                                <label>
+                                    <input type="checkbox" class="regular hidden" data-value="RO">
+                                    <span>RO (без питания)</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group hotel-name extended hidden">
+                    <button type="button" class="btn btn-dashedlink onblue js-hotel-name hidden">
+                        Название отеля
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="search-button">
+            <div class="search-go-wrap text-center">
+                <button type="button" class="btn btn-medium btn-yellow">Найти туры</button>
+                <button type="button" class="btn btn-dashedlink onblue extend js-search-extend no-underline"><span
+                        class="underlined">Расширенный поиск</span></button>
+            </div>
+        </div>
+        </div>
+        </form>
+        </div>
+    </div>
+</div>
+<!--search-intro-->
+
+<div class="container">
+
+    <div class="split advantages">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="advantage advantage-online">
+                    <div class="img"></div>
+                    <div class="text">
+                        <h4>Покупайте туры<br>онлайн</h4>
+                        <p class="small">Договор оформляется<br>прямо на&nbsp;сайте</p>
+                    </div>
+                 </div>
+            </div>
+            <div class="col-md-3">
+                <div class="advantage advantage-turoperators">
+                    <div class="img"></div>
+                    <div class="text">
+                        <h4>Надёжные<br>туроператоры</h4>
+                        <p class="small">Работаем только<br>с&nbsp;проверенными<br>туроператорами</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="advantage advantage-help">
+                    <div class="img"></div>
+                    <div class="text">
+                        <h4>Поможем<br>с&nbsp;выбором</h4>
+                        <p class="small">Готовы ответить<br>на&nbsp;ваши вопросы</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="advantage advantage-recommendations">
+                    <div class="img"></div>
+                    <div class="text">
+                        <h4>Рекомендуем<br>отели</h4>
+                        <p class="small">Наши эксперты отметили<br>лучшие отели</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="split">
+        <div class="touroperators js-touroperators">
+            <a class="arrow scroll-left">
+                <span class="icon-arrow-left"></span>
+            </a>
+            <a class="arrow scroll-right">
+                <span class="icon-arrow-right"></span>
+            </a>
+            <ul class="touroperators-inner">
+                <li>
+                    <img src="ct/touroperators/sunmar.png">
+                </li>
+                <li>
+                    <img src="ct/touroperators/anex.png">
+                </li>
+                <li>
+                    <img src="ct/touroperators/tui.png">
+                </li>
+                <li>
+                    <img src="ct/touroperators/biblio.png">
+                </li>
+                <li>
+                    <img src="ct/touroperators/tez.png">
+                </li>
+                <li>
+                    <img src="ct/touroperators/pegas.png">
+                </li>
+                <li>
+                    <img src="ct/touroperators/coral.png">
+                </li>
+                <li>
+                    <img src="ct/touroperators/ics.png">
+                </li>
+                <li>
+                    <img src="ct/touroperators/solvex.png">
+                </li>
+                <li>
+                    <img src="ct/touroperators/intourist.png">
+                </li>
+                <li>
+                    <img src="ct/touroperators/rusexpress.png">
+                </li>
+                <li>
+                    <img src="ct/touroperators/transaero.png">
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="reviews">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="bubble small">
+                    <p class="">...оплатили и через несколько часов тур был подтвержден. Понравилась система уведомлений, на телефон приходили оповещения о
+                        состоянии заказа... <span class="date">— 14&nbsp;мая</span></p>
+                </div>
+                <div class="author">
+                    <div class="round-photo">
+                        <img src="ct/face-02.jpg">
+                    </div>
+                    <div class="author-text">
+                        <p>Александр Сергушкин</p>
+                        <p class="country">Страна отдыха: Египет</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bubble small">
+                    <p class="">Подруга рассказала мне про онлайн турагенство Viasun.travel. Я удивилась: что еще за онлайн турагентство? Как это, купить тур прямо на сайте? Но подруга была просто в восторге, и, планируя отпуск (я о... <span class="date">— 14&nbsp;мая</span></p>
+                </div>
+                <div class="author">
+                    <div class="round-photo">
+                        <img src="ct/face-02.jpg">
+                    </div>
+                    <div class="author-text">
+                        <p>Анна Шуклина</p>
+                        <p class="country">Страна отдыха: Таиланд</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bubble small">
+                    <p class="">Классная идея! Чтоб купить тур, не надо никуда ехать, все делается через интернет! Давно пора турагентствам переходить в такой формат работы. А если что-то непонятно, вежливые и профессиональные менед... <span class="date">— 14&nbsp;мая</span></p>
+                </div>
+                <div class="author">
+                    <div class="round-photo">
+                        <img src="ct/face-02.jpg">
+                    </div>
+                    <div class="author-text">
+                        <p>Екатерина Филатова</p>
+                        <p class="country">Страна отдыха: Греция</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="split">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <a href="#" class="btn btn-yellow btn-big js-search-highlight" data-country="39">Узнать цены</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+<!--page-->
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <ul class="footer-nav">
+                    <li><a href="#">Об агентстве</a></li>
+                    <li><a href="#">Вопрос-ответ</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <p>&copy; 2014 — ООО «Виасан», ИНН 5406717327, ОГРН 1125476109758</p>
+                <p>Вся информация, размещённая на сайте, носит исключительно информационный характер и не является рекламой и публичной офертой</p>
+                <p class="payment-icons">
+                    <span class="inline bank"></span>
+                    <span class="inline visa"></span>
+                    <span class="inline mc"></span>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <div class="text-right">
+                    <p class="footer-phone">8 800 333 4576</p>
+                    <p>Бесплатный звонок по России</p>
+                    <p>
+                        <a class="logo-cs" href="http://constructivesolutions.ru/" target="_blank">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	viewBox="0 0 111.75 64.791" enable-background="new 0 0 111.75 64.791" xml:space="preserve">
+                                <path class="cs" d="M79.375,0.041C61.494,0.041,47,14.416,47,32.416H32.375V0C14.495,0,0,14.494,0,32.375C0,50.255,14.495,64.75,32.375,64.75
+	V37.385c2.379,15.605,15.8,27.406,32,27.406c17.881,0,32.375-14.375,32.375-32.375h15C111.75,14.416,97.256,0.041,79.375,0.041z"/>
+                            </svg>
+                            <span class="text">Constructive<br>Solutions</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer-->
+
+
+<div class="modal fade modal-login" id="modal-login" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+                <span class="sr-only">Close</span>
+            </button>
+            <div class="modal-header">
+                <h4>Вход для клиентов</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form" class="form-flex auth">
+                    <div class="line small">
+                        <div class="section">
+                            <div class="form-group email">Email</div>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="section">
+                            <div class="form-group email">
+                                <label class="sr-only" for="edit-email">Email</label>
+                                <input class="form-control" id="edit-email" type="text" placeholder="ilove@viasun.ru">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line small">
+                        <div class="section">
+                            <div class="form-group password">Пароль</div>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="section">
+                            <div class="form-group password">
+                                <label class="sr-only" for="profile-pass">Пароль</label>
+                                <input class="form-control" id="profile-pass" type="password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="section">
+                            <div class="form-group flex-justify">
+                                <a href="orderlist.html" class="btn btn-yellow">Войти</a>
+                                <a href="recover-pass.html" class="small">Забыли пароль?</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <p class="text-center">
+                    <a href="register.html" class="small">Зарегистрироваться</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-search-city" id="modal-search-city" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul>
+                            <span class="letter">А</span>
+                            <li><a href="#" class="link-dashed">Абакан</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Архангельск</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                        </ul>
+                        <ul>
+                            <span class="letter">А</span>
+                            <li><a href="#" class="link-dashed">Абакан</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Архангельск</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                        </ul>
+                        <ul>
+                            <span class="letter">А</span>
+                            <li><a href="#" class="link-dashed">Абакан</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Архангельск</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            <span class="letter">А</span>
+                            <li><a href="#" class="link-dashed">Абакан</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Архангельск</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                        </ul>
+                        <ul>
+                            <span class="letter">А</span>
+                            <li><a href="#" class="link-dashed">Абакан</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Архангельск</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                        </ul>
+                        <ul>
+                            <span class="letter">А</span>
+                            <li><a href="#" class="link-dashed">Абакан</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Архангельск</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            <span class="letter">К</span>
+                            <li><a href="#" class="link-dashed current">Комсомольск-на-Амуре</a></li>
+                            <li><a href="#" class="link-dashed">Архангельск</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                        </ul>
+                        <ul>
+                            <span class="letter">А</span>
+                            <li><a href="#" class="link-dashed">Абакан</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                        </ul>
+                        <ul>
+                            <span class="letter">А</span>
+                            <li><a href="#" class="link-dashed">Абакан</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Архангельск</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            <span class="letter">А</span>
+                            <li><a href="#" class="link-dashed">Абакан</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Архангельск</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                        </ul>
+                        <ul>
+                            <span class="letter">А</span>
+                            <li><a href="#" class="link-dashed">Абакан</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Архангельск</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                        </ul>
+                        <ul>
+                            <span class="letter">А</span>
+                            <li><a href="#" class="link-dashed">Абакан</a></li>
+                            <li><a href="#" class="link-dashed">Ангарск</a></li>
+                            <li><a href="#" class="link-dashed">Архангельск</a></li>
+                            <li><a href="#" class="link-dashed">Астрахань</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="goback">
+    <a href="#" class="collapse js-collapse"><span></span></a>
+    <a href="#" class="wrap wrap-default"><span>Вернуться к&nbsp;бронированию</span></a>
+    <a href="" class="wrap wrap-vertical"><span>Ваш тур</span></a>
+</div>
+
+
+<div class="body-mask js-body-mask off"></div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-multiselect.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/moment.ru.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/bootstrap-datetimepicker.js"></script>
+<script src="js/jquery.inputmask.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/popovers.js"></script>
+<script src="js/search-form.js"></script>
+
+<script>
+    $(function(){
+        var scrollbarWidth = getScrollBarWidth();
+
+        var $searchPopover = $('.form-search').popover({
+            html: true,
+            content: '<div class="text-center"><p>Уточните дату вылета, продолжительность и количество человек</p><a href="#" class="no-underline small text-center link-dashed close-this"><span>&times;</span> <span class="underlined">Закрыть</span></a></div>',
+            placement: 'bottom',
+            template: applyPopoverStyle('popover-search-country'),
+            trigger: 'manual'
+        });
+        $('body').delegate(".popover-search-country .close-this", "click", function(){$searchPopover.popover('hide')});
+
+        $('.js-search-highlight').click(function(e){
+            var country = $(this).data('country');
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: 0
+            }, 500, function(){
+                $('body').addClass('modal-open');
+                $('body').css({
+                    'padding-right': scrollbarWidth
+                });
+                $('.js-body-mask').removeClass('off');
+                $('.js-search-country').select2("val", country);
+                $searchPopover.popover('show');
+            });
+        });
+
+        $('.js-body-mask').click(function(){
+            $(this).addClass('off');
+            $('body').css({
+                'padding-right': ''
+            });
+            $('body').removeClass('modal-open');
+            $searchPopover.popover('hide');
+        });
+
+        $('.modal-search-city').on('show.bs.modal', function(){
+            if (!$('.body-mask').hasClass('off')) {
+                $('body').css({
+                    'padding-right': ''
+                });
+            }
+        });
+
+        $('.modal-search-city').on('hidden.bs.modal', function(){
+            if (!$('.body-mask').hasClass('off')) {
+                $('body').addClass('modal-open');
+                $('body').css({
+                    'padding-right': scrollbarWidth
+                });
+            }
+        });
+
+        var $touroperators = $('.js-touroperators');
+        $touroperators.find('.scroll-left').addClass('disabled');
+        var $touroperatorsInner = $touroperators.find('.touroperators-inner');
+        var touroperatorsLength = $touroperatorsInner.find('li').length * $touroperatorsInner.find('li').outerWidth(true) + 50;
+        $touroperatorsInner.css('width', touroperatorsLength);
+
+        $touroperators.find('.scroll-right').click(function (e) {
+            e.preventDefault();
+            if ($(this).hasClass('disabled')) return;
+            $touroperators.find('.scroll-left').removeClass('disabled');
+            var left;
+
+            //console.log(touroperatorsLength + ' + ' + $touroperatorsInner.position().left + ' - ' + $touroperators.innerWidth() + '* 2');
+            if ( (touroperatorsLength + $touroperatorsInner.position().left - $touroperators.innerWidth() * 2) <= 0 ) {
+                //console.log($touroperatorsInner.innerWidth() + ' - ' + touroperatorsLength)
+                left = $touroperators.innerWidth() - touroperatorsLength;
+                $(this).addClass('disabled');
+            } else {
+                left = '-=' + $touroperators.innerWidth();
+            }
+            //console.log(left);
+            $touroperatorsInner.animate({
+                left: left
+            }, 700);
+        });
+
+        $touroperators.find('.scroll-left').click(function (e) {
+            e.preventDefault();
+            if ($(this).hasClass('disabled')) return;
+            $touroperators.find('.scroll-right').removeClass('disabled');
+            var left;
+            if ( ($touroperatorsInner.position().left + $touroperators.innerWidth()) >= 0 ) {
+                left = '0';
+                $(this).addClass('disabled');
+            } else {
+                left = '+=' + $touroperators.innerWidth();
+            }
+            $touroperatorsInner.animate({
+                left: left
+            }, 700);
+        });
+    })
+</script>
+</body>
+</html>
